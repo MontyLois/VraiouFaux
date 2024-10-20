@@ -1,4 +1,5 @@
-﻿using Cinemachine;
+﻿using System;
+using Unity.Cinemachine;
 using UnityEngine;
 
 namespace ECM2.Walkthrough.Ex92
@@ -9,7 +10,8 @@ namespace ECM2.Walkthrough.Ex92
     ///
     /// Must be added to a Character.
     /// </summary>
-    
+
+    [Obsolete("Obsolete")]
     public class ThirdPersonController : MonoBehaviour
     {
         [Header("Cinemachine")]
@@ -39,50 +41,50 @@ namespace ECM2.Walkthrough.Ex92
 
         [Space(15.0f)]
         public bool invertLook = true;
-        
+
         [Tooltip("Mouse look sensitivity")]
         public Vector2 lookSensitivity = new Vector2(1.5f, 1.25f);
-        
+
         // Cached Character
-        
+
         private Character _character;
-        
+
         // Current followTarget yaw and pitch angles
 
         private float _cameraTargetYaw;
         private float _cameraTargetPitch;
-        
+
         // Current follow distance
-        
+
         private Cinemachine3rdPersonFollow _cmThirdPersonFollow;
         protected float _followDistanceSmoothVelocity;
-        
+
         /// <summary>
-        /// Add input (affecting Yaw). 
+        /// Add input (affecting Yaw).
         /// This is applied to the followTarget's yaw rotation.
         /// </summary>
-        
+
         public void AddControlYawInput(float value, float minValue = -180.0f, float maxValue = 180.0f)
         {
             if (value != 0.0f) _cameraTargetYaw = MathLib.ClampAngle(_cameraTargetYaw + value, minValue, maxValue);
         }
-        
+
         /// <summary>
-        /// Add input (affecting Pitch). 
+        /// Add input (affecting Pitch).
         /// This is applied to the followTarget's pitch rotation.
         /// </summary>
-        
+
         public void AddControlPitchInput(float value, float minValue = -80.0f, float maxValue = 80.0f)
         {
             if (value == 0.0f)
                 return;
-            
+
             if (invertLook)
                 value = -value;
-            
+
             _cameraTargetPitch = MathLib.ClampAngle(_cameraTargetPitch + value, minValue, maxValue);
         }
-        
+
         /// <summary>
         /// Adds input (affecting follow distance).
         /// </summary>
@@ -91,7 +93,7 @@ namespace ECM2.Walkthrough.Ex92
         {
             followDistance = Mathf.Clamp(followDistance - value, followMinDistance, followMaxDistance);
         }
-        
+
         /// <summary>
         /// Update followTarget rotation using _cameraTargetYaw and _cameraTargetPitch values and its follow distance.
         /// </summary>
@@ -99,17 +101,17 @@ namespace ECM2.Walkthrough.Ex92
         private void UpdateCamera()
         {
             followTarget.transform.rotation = Quaternion.Euler(_cameraTargetPitch, _cameraTargetYaw, 0.0f);
-            
-            _cmThirdPersonFollow.CameraDistance = 
+
+            _cmThirdPersonFollow.CameraDistance =
                 Mathf.SmoothDamp(_cmThirdPersonFollow.CameraDistance, followDistance, ref _followDistanceSmoothVelocity, 0.1f);
         }
 
         private void Awake()
         {
             // Cache our controlled character
-            
+
             _character = GetComponent<Character>();
-            
+
             // Cache and init Cinemachine3rdPersonFollow component
 
             _cmThirdPersonFollow = followCamera.GetCinemachineComponent<Cinemachine3rdPersonFollow>();
@@ -120,54 +122,54 @@ namespace ECM2.Walkthrough.Ex92
         private void Start()
         {
             // Lock mouse cursor
-            
+
             Cursor.lockState = CursorLockMode.Locked;
         }
 
         private void Update()
         {
             // Movement input
-            
+
             Vector2 inputMove = new Vector2()
             {
                 x = Input.GetAxisRaw("Horizontal"),
                 y = Input.GetAxisRaw("Vertical")
             };
-            
+
             // Set Movement direction in world space
-            
+
             Vector3 movementDirection =  Vector3.zero;
 
             movementDirection += Vector3.right * inputMove.x;
             movementDirection += Vector3.forward * inputMove.y;
-            
+
             // If character has a camera assigned...
-            
+
             if (_character.camera)
             {
                 // Make movement direction relative to its camera view direction
-                
+
                 movementDirection = movementDirection.relativeTo(_character.cameraTransform);
             }
-            
+
             // Set Character movement direction
 
             _character.SetMovementDirection(movementDirection);
-            
+
             // Crouch input
-            
+
             if (Input.GetKeyDown(KeyCode.LeftControl) || Input.GetKeyDown(KeyCode.C))
                 _character.Crouch();
             else if (Input.GetKeyUp(KeyCode.LeftControl) || Input.GetKeyUp(KeyCode.C))
                 _character.UnCrouch();
-            
+
             // Jump input
-            
+
             if (Input.GetButtonDown("Jump"))
                 _character.Jump();
             else if (Input.GetButtonUp("Jump"))
                 _character.StopJumping();
-            
+
             // Look input
 
             Vector2 lookInput = new Vector2
@@ -175,10 +177,10 @@ namespace ECM2.Walkthrough.Ex92
                 x = Input.GetAxisRaw("Mouse X"),
                 y = Input.GetAxisRaw("Mouse Y")
             };
-            
+
             AddControlYawInput(lookInput.x * lookSensitivity.x);
             AddControlPitchInput(lookInput.y * lookSensitivity.y, minPitch, maxPitch);
-            
+
             // Zoom (in / out) input
 
             float mouseScrollInput = Input.GetAxisRaw("Mouse ScrollWheel");
@@ -188,7 +190,7 @@ namespace ECM2.Walkthrough.Ex92
         private void LateUpdate()
         {
             // Update cameraTarget rotation using our yaw and pitch values
-            
+
             UpdateCamera();
         }
     }
