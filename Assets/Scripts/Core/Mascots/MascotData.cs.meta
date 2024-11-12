@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: 92dc358e1996383448df088b77a39db3
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - <Avatar>k__BackingField: {fileID: 2682073208343256835, guid: d5fa7411a24189042b052c899593b4a8, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
