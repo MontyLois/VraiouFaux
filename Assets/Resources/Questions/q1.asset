@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07453d4fbc2afca4798e6d8b0a851cab, type: 3}
   m_Name: q1
   m_EditorClassIdentifier: 
-  <QuestionText>k__BackingField: 'Est-ce que fumer tue ? '
-  <Solution>k__BackingField: 1
-  <Explanation>k__BackingField: Fumer peut entrainer un cancer du poumon
+  <QuestionText>k__BackingField: Fumer augmente les risques de cancer de la peau.
+  <Solution>k__BackingField: 0
+  <Explanation>k__BackingField: Fumer peut entrainer un cancer du poumon, mais pas
+    de la peau
