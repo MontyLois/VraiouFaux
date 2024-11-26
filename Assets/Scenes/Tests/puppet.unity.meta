@@ -1,5 +1,10 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Scenes/Tests/puppet.unity.meta
 guid: 92a35ebdc927b7747a9b63a2515e7d49
+========
+guid: 69e3626c2190d014892840295a1b36be
+folderAsset: yes
+>>>>>>>> origin/dev:Assets/Resources/Input.meta
 DefaultImporter:
   externalObjects: {}
   userData: 
