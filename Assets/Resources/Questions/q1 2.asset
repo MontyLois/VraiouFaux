@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07453d4fbc2afca4798e6d8b0a851cab, type: 3}
   m_Name: q1 2
   m_EditorClassIdentifier: 
-  <QuestionText>k__BackingField: Manger c'est mal?
-  <Solution>k__BackingField: 0
+  <QuestionText>k__BackingField: La consommation d'alcool augmente les risques de
+    cancer
+  <Solution>k__BackingField: 1
   <Explanation>k__BackingField: "il est n\xE9c\xE9ssaire de manger pour vivre"

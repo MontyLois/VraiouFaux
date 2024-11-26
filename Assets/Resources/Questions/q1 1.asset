@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07453d4fbc2afca4798e6d8b0a851cab, type: 3}
   m_Name: q1 1
   m_EditorClassIdentifier: 
-  <QuestionText>k__BackingField: Tuer tue?
+  <QuestionText>k__BackingField: "il est recommander de faire 1h15 d'activit\xE9
+    physique intense par semaine"
   <Solution>k__BackingField: 1
   <Explanation>k__BackingField: "les gens meurts quand ils sont tu\xE9"

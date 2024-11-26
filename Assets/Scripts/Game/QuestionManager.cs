@@ -50,6 +50,7 @@ namespace VraiOuFaux.Game
                 questions.Enqueue(question);
                 questionsList.RemoveAt(questionIndex);
             }
+            
         }
 
         private void Start()
@@ -60,6 +61,7 @@ namespace VraiOuFaux.Game
 
         public void SeeNextQuestion()
         {
+            //check if there's still question left
             if (questions.TryPeek(out Question next))
             {
                 Debug.Log("New");
@@ -70,6 +72,7 @@ namespace VraiOuFaux.Game
             }
             else
             {
+                //no more question, the quizz is completed
                 OnComplete?.Invoke();
                 Debug.Log("Completed");
             }
@@ -82,7 +85,7 @@ namespace VraiOuFaux.Game
         {
             if (questions.TryDequeue(out Question currentQuestion))
             {
-                //get the player answer
+                //get the player answer and invok
                 bool result = currentQuestion.Answer(answer);
                 Debug.Log(result ? "Success" : "Failure");
                 OnQuestionAnswered?.Invoke(currentQuestion, result);
