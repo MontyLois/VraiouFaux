@@ -174,3 +174,4 @@ MonoBehaviour:
   mascotHeadPosition: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   mascotRigidBody: {fileID: 0}
+  renderImage: {fileID: 939156543742016833}

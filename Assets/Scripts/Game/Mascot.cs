@@ -24,6 +24,8 @@ namespace VraiOuFaux.Game
         private Vector3 initialPosition;
         [SerializeField]
         private Rigidbody mascotRigidBody;
+        [SerializeField]
+        private SpriteRenderer renderImage;
 
         private bool isSwiped;
         
@@ -50,30 +52,43 @@ namespace VraiOuFaux.Game
             Debug.Log("phase : " + touch.phase);
             if (!isSwiped)
             {
+                string Choice = GetTrueOrFalse(position);
                 if ((touch.phase == TouchPhase.Began && IsMouseOverUIWithIgnore(position) )|| touch.phase == TouchPhase.Moved)
                 {
                     mascotHeadPosition.position = new Vector3(newpos.x, newpos.y, mascotHeadPosition.position.z);
                 }
-                if (touch.phase == TouchPhase.Ended)
+                switch (Choice)
                 {
-                    switch (GetTrueOrFalse(position))
-                    {
-                        case "true" :
+                    case "true" :
+                        //change color
+                        renderImage.color = Color.green;
+                        if (touch.phase == TouchPhase.Ended)
+                        {
                             isSwiped = true;
-                            mascotRigidBody.AddForce(10000,delta.y * 5000,0);
+                            mascotRigidBody.AddForce(20000,delta.y * 1000,0);
                             StartCoroutine(IAnswerQuestion(true));
-                            break;
-                        case "false" :
+                        }
+                        break;
+                    case "false" :
+                        //change colorS
+                        renderImage.color = Color.red;
+                        if (touch.phase == TouchPhase.Ended)
+                        {
                             isSwiped = true;
-                            mascotRigidBody.AddForce(-10000,delta.y * 5000,0);
+                            mascotRigidBody.AddForce(-20000,delta.y * 1000,0);
                             StartCoroutine(IAnswerQuestion(false));
-                            break;
-                        default:
-                            //reset pos if no answer choosed
+                        }
+                        break;
+                    default:
+                        //reset color
+                        renderImage.color = new Color(255,255,255, 255);
+                        if (touch.phase == TouchPhase.Ended)
+                        {
                             mascotHeadPosition.position = initialPosition;
-                            break;
-                    }
+                        }
+                        break;
                 }
+                
             }
             
         }
@@ -138,14 +153,6 @@ namespace VraiOuFaux.Game
 
         private IEnumerator IAnswerQuestion(bool answer)
         {
-            if (answer)
-            {
-                
-            }
-            else
-            {
-                
-            }
             yield return new WaitForSeconds(1);
             AnswerQuestion(answer);
         }
