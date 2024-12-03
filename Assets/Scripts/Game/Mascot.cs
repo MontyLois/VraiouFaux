@@ -1,12 +1,14 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using DG.Tweening;
 using Unity.Android.Gradle.Manifest;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.LowLevel;
 using UnityEngine.UIElements;
+using VraiOuFaux.Core;
 using Action = System.Action;
 using Screen = UnityEngine.Screen;
 using TouchPhase = UnityEngine.InputSystem.TouchPhase;
@@ -52,16 +54,16 @@ namespace VraiOuFaux.Game
             Debug.Log("phase : " + touch.phase);
             if (!isSwiped)
             {
-                string Choice = GetTrueOrFalse(position);
+                bool choice = GetTrueOrFalse(position, out bool isMiddle);
                 if ((touch.phase == TouchPhase.Began && IsMouseOverUIWithIgnore(position) )|| touch.phase == TouchPhase.Moved)
                 {
                     mascotHeadPosition.position = new Vector3(newpos.x, newpos.y, mascotHeadPosition.position.z);
                 }
-                switch (Choice)
+                switch (choice, isMiddle)
                 {
-                    case "true" :
+                    case (true, false):
                         //change color
-                        renderImage.color = Color.green;
+                        renderImage.color = GameController.GameMetrics.MascotColorGood;
                         if (touch.phase == TouchPhase.Ended)
                         {
                             isSwiped = true;
@@ -69,9 +71,10 @@ namespace VraiOuFaux.Game
                             StartCoroutine(IAnswerQuestion(true));
                         }
                         break;
-                    case "false" :
+                    case (false, false):
                         //change colorS
-                        renderImage.color = Color.red;
+                        renderImage.color = GameController.GameMetrics.MascotColorBad;
+                        Debug.Log("Color RED");
                         if (touch.phase == TouchPhase.Ended)
                         {
                             isSwiped = true;
@@ -81,7 +84,7 @@ namespace VraiOuFaux.Game
                         break;
                     default:
                         //reset color
-                        renderImage.color = new Color(255,255,255, 255);
+                        renderImage.color = GameController.GameMetrics.MascotColorNormal;
                         if (touch.phase == TouchPhase.Ended)
                         {
                             mascotHeadPosition.position = initialPosition;
@@ -96,8 +99,9 @@ namespace VraiOuFaux.Game
         /*
          * Use GameObject with tag to determine if finger position is on the true or false side
          */
-        private String GetTrueOrFalse(Vector2 touchPosition)
+        private bool GetTrueOrFalse(Vector2 touchPosition, out bool isMiddle)
         {
+            isMiddle = false;
             PointerEventData pointerEventData = new PointerEventData(EventSystem.current);
             pointerEventData.position = touchPosition;
 
@@ -107,14 +111,16 @@ namespace VraiOuFaux.Game
             {
                 if (raycastResultsList[i].gameObject.CompareTag("False"))
                 {
-                    return "false";
+                    return false;
                 }
                 else if (raycastResultsList[i].gameObject.CompareTag("True"))
                 {
-                    return "true";
+                    return true;
                 }
             }
-            return "none";
+
+            isMiddle = true;
+            return default;
         }
 
         /*

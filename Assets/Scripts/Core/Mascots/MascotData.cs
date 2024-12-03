@@ -8,10 +8,9 @@ namespace VraiOuFaux.Core.Mascots
     {
         [field: SerializeField]
         public QuestionData Question { get; private set; }
-        
         [field: SerializeField]
         public GameObject Avatar { get; private set; }
         [field: SerializeField]
-        public bool PlayerAnswer { get; private set; }
+        public bool PlayerAnswer { get; set; }
     }
 }

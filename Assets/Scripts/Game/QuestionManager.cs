@@ -67,7 +67,6 @@ namespace VraiOuFaux.Game
                 Debug.Log("New");
                 //spawn the mascot
                 currentMascot = Instantiate(next.GetAvatar());
-                //faire avancer la mascotte et attendre la fin pour trigger l'event
                 OnNewQuestion?.Invoke(next);
             }
             else
