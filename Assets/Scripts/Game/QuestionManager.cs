@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using LTX.Singletons;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using VraiOuFaux.Core;
 using VraiOuFaux.Core.Mascots;
 using Random = UnityEngine.Random;
@@ -74,6 +75,7 @@ namespace VraiOuFaux.Game
                 //no more question, the quizz is completed
                 OnComplete?.Invoke();
                 Debug.Log("Completed");
+                SceneManager.LoadScene("HistoricTests");
             }
         }
 
@@ -84,10 +86,12 @@ namespace VraiOuFaux.Game
         {
             if (questions.TryDequeue(out Question currentQuestion))
             {
+                
                 //get the player answer and invok
                 bool result = currentQuestion.Answer(answer);
                 Debug.Log(result ? "Success" : "Failure");
                 OnQuestionAnswered?.Invoke(currentQuestion, result);
+                currentQuestion._data.PlayerAnswer = answer;
                 //destroy the mascot
                 Destroy(currentMascot);
                 //start new question
