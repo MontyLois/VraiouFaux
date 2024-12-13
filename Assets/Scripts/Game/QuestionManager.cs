@@ -86,7 +86,6 @@ namespace VraiOuFaux.Game
         {
             if (questions.TryDequeue(out Question currentQuestion))
             {
-                
                 //get the player answer and invok
                 bool result = currentQuestion.Answer(answer);
                 Debug.Log(result ? "Success" : "Failure");

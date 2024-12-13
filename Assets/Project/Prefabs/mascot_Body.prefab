@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3422088861403657371}
   - component: {fileID: 1885269326628906887}
   m_Layer: 0
-  m_Name: mascot_Body
+  m_Name: mascot_body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
