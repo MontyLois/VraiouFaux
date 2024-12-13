@@ -7,7 +7,7 @@ namespace VraiOuFaux.Game
     public struct Question
     {
         public MascotData MascotData { get; private set; }
-        private readonly QuestionData _data;
+        public QuestionData _data { get; private set; }
         private Animator _animator;
 
         public Question(QuestionData data, MascotData mascotData)

@@ -11,6 +11,8 @@ namespace VraiOuFaux.Core.Questions
         public bool Solution { get; private set; }
         [field: SerializeField]
         public string Explanation { get; private set; }
+        [field: SerializeField]
+        public bool PlayerAnswer { get; set; }
         
 
         /*

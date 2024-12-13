@@ -38,6 +38,7 @@ namespace VraiOuFaux.Game
             if (spawner != null)
             {
                 mascotHeadPosition.position = spawner.transform.position;
+                mascotHeadPosition.rotation = spawner.transform.rotation;
             }
             initialPosition = mascotHeadPosition.position;
             isSwiped = false;
@@ -49,51 +50,56 @@ namespace VraiOuFaux.Game
             TouchState touch = context.ReadValue<TouchState>();
             Vector2 position = touch.position;
             Vector2 delta = touch.delta;
-            Vector3 newpos = Camera.main.ScreenToWorldPoint(new Vector3(position.x, position.y, this.mascotHeadPosition.position.z));
-            
-            Debug.Log("phase : " + touch.phase);
-            if (!isSwiped)
+            if (Camera.main != null)
             {
-                bool choice = GetTrueOrFalse(position, out bool isMiddle);
-                if ((touch.phase == TouchPhase.Began && IsMouseOverUIWithIgnore(position) )|| touch.phase == TouchPhase.Moved)
-                {
-                    mascotHeadPosition.position = new Vector3(newpos.x, newpos.y, mascotHeadPosition.position.z);
-                }
-                switch (choice, isMiddle)
-                {
-                    case (true, false):
-                        //change color
-                        renderImage.color = GameController.GameMetrics.MascotColorGood;
-                        if (touch.phase == TouchPhase.Ended)
-                        {
-                            isSwiped = true;
-                            mascotRigidBody.AddForce(20000,delta.y * 1000,0);
-                            StartCoroutine(IAnswerQuestion(true));
-                        }
-                        break;
-                    case (false, false):
-                        //change colorS
-                        renderImage.color = GameController.GameMetrics.MascotColorBad;
-                        Debug.Log("Color RED");
-                        if (touch.phase == TouchPhase.Ended)
-                        {
-                            isSwiped = true;
-                            mascotRigidBody.AddForce(-20000,delta.y * 1000,0);
-                            StartCoroutine(IAnswerQuestion(false));
-                        }
-                        break;
-                    default:
-                        //reset color
-                        renderImage.color = GameController.GameMetrics.MascotColorNormal;
-                        if (touch.phase == TouchPhase.Ended)
-                        {
-                            mascotHeadPosition.position = initialPosition;
-                        }
-                        break;
-                }
-                
-            }
+                float z = this.mascotHeadPosition.position.z - Camera.main.transform.position.z;
+                Vector3 newpos = Camera.main.ScreenToWorldPoint(new Vector3(position.x, position.y,z ));
             
+                
+            
+                Debug.Log("phase : " + touch.phase);
+                if (!isSwiped)
+                {
+                    bool choice = GetTrueOrFalse(position, out bool isMiddle);
+                    if ((touch.phase == TouchPhase.Began && IsMouseOverUIWithIgnore(position) )|| touch.phase == TouchPhase.Moved)
+                    {
+                        mascotHeadPosition.position = new Vector3(newpos.x, newpos.y, mascotHeadPosition.position.z);
+                    }
+                    switch (choice, isMiddle)
+                    {
+                        case (true, false):
+                            //change color
+                            renderImage.color = GameController.GameMetrics.MascotColorGood;
+                            if (touch.phase == TouchPhase.Ended)
+                            {
+                                isSwiped = true;
+                                mascotRigidBody.AddForce(200,delta.y * 50,0);
+                                StartCoroutine(IAnswerQuestion(true));
+                            }
+                            break;
+                        case (false, false):
+                            //change colorS
+                            renderImage.color = GameController.GameMetrics.MascotColorBad;
+                            Debug.Log("Color RED");
+                            if (touch.phase == TouchPhase.Ended)
+                            {
+                                isSwiped = true;
+                                mascotRigidBody.AddForce(-200,delta.y * 50,0);
+                                StartCoroutine(IAnswerQuestion(false));
+                            }
+                            break;
+                        default:
+                            //reset color
+                            renderImage.color = GameController.GameMetrics.MascotColorNormal;
+                            if (touch.phase == TouchPhase.Ended)
+                            {
+                                mascotHeadPosition.position = initialPosition;
+                            }
+                            break;
+                    }
+                
+                }
+            }
         }
 
         /*
@@ -180,9 +186,5 @@ namespace VraiOuFaux.Game
             _animator.Play("Mascot_Wiggle");
         }
 
-        public void Move()
-        {
-            
-        }
     }
 }

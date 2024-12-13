@@ -46,7 +46,7 @@ namespace VraiOuFaux.Game.UI
 
         private void OnQuestionAnswered(Question question, bool result)
         {
-            
+            dialogue_box.SetActive(false);
         }
 
     }

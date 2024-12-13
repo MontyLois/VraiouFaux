@@ -4,5 +4,12 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Tests/QuestionsTests.unity
+    guid: 2754a5b769c744449a02c91dec89f07f
+  - enabled: 1
+    path: Assets/Scenes/Tests/HistoricTests.unity
+    guid: f721a4961fdbbc640aad9b7c91732e5e
   m_configObjects: {}
+  m_UseUCBPForAssetBundles: 0
