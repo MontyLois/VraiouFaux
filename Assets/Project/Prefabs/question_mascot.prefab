@@ -137,6 +137,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: mascot_Body
       objectReference: {fileID: 0}
+    - target: {fileID: 939156543742016833, guid: 650b399d2a293e54794d1acbd8b78b59, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 939156543742016833, guid: 650b399d2a293e54794d1acbd8b78b59, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 939156543742016833, guid: 650b399d2a293e54794d1acbd8b78b59, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 939156543742016833, guid: 650b399d2a293e54794d1acbd8b78b59, type: 3}
+      propertyPath: m_DrawMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1218427154552255282, guid: 650b399d2a293e54794d1acbd8b78b59, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.08
@@ -147,7 +163,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1218427154552255282, guid: 650b399d2a293e54794d1acbd8b78b59, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.507
       objectReference: {fileID: 0}
     - target: {fileID: 1218427154552255282, guid: 650b399d2a293e54794d1acbd8b78b59, type: 3}
       propertyPath: m_LocalPosition.y

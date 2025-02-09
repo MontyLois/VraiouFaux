@@ -13,27 +13,5 @@ namespace VraiOuFaux.Core.Questions
         public string Explanation { get; private set; }
         [field: SerializeField]
         public bool PlayerAnswer { get; set; }
-        
-
-        /*
-         
-         Pareil qu'au dessus :
-         
-        [SerializeField]
-        private string _questionText;
-
-        public string QQuestionText
-        {
-            get
-            {
-                Debug.Log("1");
-                return _questionText;
-            }
-            set
-            {
-                _questionText = value;
-            }
-        }
-        */
     }
 }

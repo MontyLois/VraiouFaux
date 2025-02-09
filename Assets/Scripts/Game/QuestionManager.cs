@@ -11,12 +11,13 @@ namespace VraiOuFaux.Game
 {
     public class QuestionManager : MonoSingleton<QuestionManager>
     {
-        public event Action OnComplete;
+        public event Action<List<(Question, bool)>> OnComplete;
         public event Action<Question> OnNewQuestion;
         public event Action<Question, bool> OnQuestionAnswered;
 
         private Queue<Question> questions;
         private GameObject currentMascot;
+        private List<(Question, bool)> playerAnswers;
 
         [SerializeField] 
         private int questionCount = 11;
@@ -73,7 +74,7 @@ namespace VraiOuFaux.Game
             else
             {
                 //no more question, the quizz is completed
-                OnComplete?.Invoke();
+                OnComplete?.Invoke(playerAnswers);
                 Debug.Log("Completed");
                 SceneManager.LoadScene("HistoricTests");
             }
@@ -91,6 +92,7 @@ namespace VraiOuFaux.Game
                 Debug.Log(result ? "Success" : "Failure");
                 OnQuestionAnswered?.Invoke(currentQuestion, result);
                 currentQuestion._data.PlayerAnswer = answer;
+                playerAnswers.Add((currentQuestion,answer));
                 //destroy the mascot
                 Destroy(currentMascot);
                 //start new question
