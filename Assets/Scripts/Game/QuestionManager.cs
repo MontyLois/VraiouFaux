@@ -1,8 +1,10 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using LTX.Singletons;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UIElements;
 using VraiOuFaux.Core;
 using VraiOuFaux.Core.Mascots;
 using Random = UnityEngine.Random;
@@ -16,8 +18,11 @@ namespace VraiOuFaux.Game
         public event Action<Question, bool> OnQuestionAnswered;
 
         private Queue<Question> questions;
-        private GameObject currentMascot;
         private List<(Question, bool)> playerAnswers;
+        //the mascot and its spawn
+        private GameObject currentMascot;
+        private Transform spawnTransform;
+        
 
         [SerializeField] 
         private int questionCount = 11;
@@ -26,7 +31,6 @@ namespace VraiOuFaux.Game
         {
             // ask lupeni
             base.Awake();
-
             /*
              * generate queue of question in random order
              */
@@ -38,7 +42,6 @@ namespace VraiOuFaux.Game
                 MascotData mascot = mascots[i];
                 questionsList.Add(new Question(mascot.Question, mascot));
             }
-
             
             // store question in queue in random order 
             int capacity = Mathf.Min(questionCount, questionsList.Count);
@@ -52,11 +55,16 @@ namespace VraiOuFaux.Game
                 questions.Enqueue(question);
                 questionsList.RemoveAt(questionIndex);
             }
-            
         }
 
         private void Start()
         {
+            playerAnswers = new List<(Question, bool)>();
+            GameObject spawn = GameObject.FindWithTag("Spawn");
+            if (spawn)
+            {
+                spawnTransform = spawn.GetComponent<Transform>();
+            }
             SeeNextQuestion();
         }
 
@@ -68,7 +76,7 @@ namespace VraiOuFaux.Game
             {
                 Debug.Log("New");
                 //spawn the mascot
-                currentMascot = Instantiate(next.GetAvatar());
+                currentMascot = Instantiate(next.GetAvatar(), spawnTransform);
                 OnNewQuestion?.Invoke(next);
             }
             else
@@ -99,6 +107,27 @@ namespace VraiOuFaux.Game
                 SeeNextQuestion();
             }
         }
-       
+
+        public void MoveCurrentMascot(Vector2 position)
+        {
+            currentMascot.GetComponent<Mascot>().GetDragged(position);
+        }
+        public void ResetCurrentMascot()
+        {
+            currentMascot.GetComponent<Mascot>().ResetPosition();
+        }
+
+        public void ThrowMascot(bool choice, Vector2 delta)
+        {
+            currentMascot.GetComponent<Mascot>().ThrowMascot(choice, delta);
+            StartCoroutine(IAnswerQuestion(choice));
+            
+        }
+        
+        private IEnumerator IAnswerQuestion(bool choice)
+        {
+            yield return new WaitForSeconds(1.5f);
+            AnswerQuestion(choice);
+        }
     }
 }

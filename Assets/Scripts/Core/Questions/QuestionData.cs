@@ -6,9 +6,13 @@ namespace VraiOuFaux.Core.Questions
     public class QuestionData : ScriptableObject
     {
         [field: SerializeField]
+        public string QuestionID { get; private set; }
+        [field: SerializeField]
         public string QuestionText { get; private set; }
         [field: SerializeField]
-        public bool Solution { get; private set; }
+        public bool SolutionB { get; private set; }
+        [field: SerializeField]
+        public string SolutionText { get; private set; }
         [field: SerializeField]
         public string Explanation { get; private set; }
         [field: SerializeField]

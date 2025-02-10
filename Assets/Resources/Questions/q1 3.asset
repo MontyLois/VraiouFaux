@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07453d4fbc2afca4798e6d8b0a851cab, type: 3}
   m_Name: q1 3
   m_EditorClassIdentifier: 
+  <QuestionID>k__BackingField: 
   <QuestionText>k__BackingField: "manger sal\xE9 n'as aucune incidence sur la sant\xE9"
-  <Solution>k__BackingField: 0
+  <SolutionB>k__BackingField: 0
+  <SolutionText>k__BackingField: 
   <Explanation>k__BackingField: "ne manger pas torp sal\xE9"
+  <PlayerAnswer>k__BackingField: 0

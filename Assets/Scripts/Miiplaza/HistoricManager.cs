@@ -1,38 +1,83 @@
+using System;
+using System.Collections.Generic;
+using LTX.Singletons;
 using UnityEngine;
+using VraiOuFaux.Core;
+using VraiOuFaux.Core.Mascots;
 using VraiOuFaux.Game;
 
-public class HistoricManager : MonoBehaviour
+public class HistoricManager : MonoSingleton<HistoricManager>
 {
 
     private GameObject selectedMascot;
     [field: SerializeField]
     private Transform selectionTransform;
+    [field: SerializeField]
+    private Transform spawnTransform;
 
-    private void SelectMascot(GameObject mascot)
+    private float xoffset = 2.5f;
+    private float zoffset = -1f;
+    private int xmax = 2;
+    
+    private Dictionary<GameObject, (Question,bool)> answersDictionary;
+    
+    public event Action<MascotData> OnMascotSelected;
+    public event Action OnMascotUnselected;
+
+    private void Start()
     {
-        if (selectedMascot)
+        int x = 0;
+        int z = 0;
+        
+        Vector3 position = new Vector3(spawnTransform.position.x,spawnTransform.position.y, spawnTransform.position.z );
+
+        List<(Question, bool)> playerAnswers = GameManager.Instance.playerAnswers;
+        foreach (var answer in playerAnswers)
         {
-            ResetCurrentMascot();
+            GameObject mascot_body = Instantiate(answer.Item1.MascotData.Avatar,position, spawnTransform.rotation,spawnTransform);
+            answersDictionary.Add(mascot_body, answer);
+            
+            //handle position offset for spawning mascot
+            if (x == xmax)
+            {
+                z++;
+                position.x = spawnTransform.position.x;
+                position.z += zoffset;
+                x = 0;
+                if (z % 2 != 0)
+                {
+                    position.x += 1.25f;
+                }
+            }
+            else
+            {
+                x++;
+                position.x += xoffset ;
+            }
         }
-        selectedMascot = mascot;
-        if (mascot)
+    }
+
+    public void SelectMascot(GameObject mascot)
+    {
+        if (!selectedMascot)
         {
-            MoveCurrentMascot(selectionTransform.position);
-            //on mets l'ui à jour
-        }
-        else
-        {
-            // on ferme l'ui
+            selectedMascot = mascot;
+            selectedMascot.GetComponent<Transform>().SetParent(selectionTransform);
+            MoveCurrentMascot(Vector3.zero);
+            OnMascotSelected?.Invoke(answersDictionary[selectedMascot].Item1.MascotData);
         }
     }
     
-    public void MoveCurrentMascot(Vector2 position)
+    public void MoveCurrentMascot(Vector3 position)
     {
         selectedMascot.GetComponent<Mascot>().MoveToPosition(position);
     }
 
     public void ResetCurrentMascot()
     {
+        selectedMascot.GetComponent<Transform>().SetParent(spawnTransform);
         selectedMascot.GetComponent<Mascot>().ResetPosition();
+        selectedMascot = null;
+        OnMascotUnselected?.Invoke();
     }
 }

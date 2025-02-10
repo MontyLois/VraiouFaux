@@ -8,13 +8,11 @@ namespace VraiOuFaux.Game
     {
         public MascotData MascotData { get; private set; }
         public QuestionData _data { get; private set; }
-        private Animator _animator;
 
         public Question(QuestionData data, MascotData mascotData)
         {
             _data = data;
             MascotData = mascotData;
-            _animator = mascotData.Avatar.GetComponent<Animator>();
         }
 
         public string GetText()
@@ -24,7 +22,7 @@ namespace VraiOuFaux.Game
         
         public bool Answer(bool answer)
         {
-            return _data.Solution == answer;
+            return _data.SolutionB == answer;
         }
         
         public GameObject GetAvatar()

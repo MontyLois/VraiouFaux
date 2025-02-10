@@ -9,12 +9,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3536819651483816284}
-  - component: {fileID: 7543414325940808446}
-  - component: {fileID: 7421225501478024569}
+  - component: {fileID: 5304250295242731958}
   - component: {fileID: 1052730246589046046}
+  - component: {fileID: 8580238492085817116}
   m_Layer: 0
   m_Name: question_mascot
-  m_TagString: Untagged
+  m_TagString: Mascot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35,7 +35,7 @@ Transform:
   - {fileID: 5038731624606146441}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &7543414325940808446
+--- !u!54 &5304250295242731958
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -62,52 +62,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &7421225501478024569
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5076651953725276105}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: d647cf732bcd17442b3c0fd000ab8b5e, type: 3}
-  m_NotificationBehavior: 2
-  m_UIInputModule: {fileID: 0}
-  m_DeviceLostEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_DeviceRegainedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ControlsChangedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ActionEvents:
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1052730246589046046}
-        m_TargetAssemblyTypeName: VraiOuFaux.Game.Mascot, VraiOuFaux.Game
-        m_MethodName: MoveMascot
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_ActionId: fa88027b-23bc-4e86-8366-6dbf449b54d0
-    m_ActionName: 'Interaction/Touch[/Device Simulator Touchscreen/primaryTouch]'
-  m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
-  m_DefaultActionMap: Interaction
-  m_SplitScreenIndex: -1
-  m_Camera: {fileID: 0}
 --- !u!114 &1052730246589046046
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -123,8 +77,31 @@ MonoBehaviour:
   _animator: {fileID: 1353811453788618486}
   mascotHeadPosition: {fileID: 3536819651483816284}
   initialPosition: {x: 0, y: 0, z: 0}
-  mascotRigidBody: {fileID: 7543414325940808446}
+  mascotRigidBody: {fileID: 5304250295242731958}
   renderImage: {fileID: 6344761927529533946}
+--- !u!136 &8580238492085817116
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5076651953725276105}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.42694384
+  m_Height: 2.2581904
+  m_Direction: 1
+  m_Center: {x: 0, y: -0.58, z: 0}
 --- !u!1001 &6126464212730113211
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -163,7 +140,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1218427154552255282, guid: 650b399d2a293e54794d1acbd8b78b59, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.507
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 1218427154552255282, guid: 650b399d2a293e54794d1acbd8b78b59, type: 3}
       propertyPath: m_LocalPosition.y
@@ -201,10 +178,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1885269326628906887, guid: 650b399d2a293e54794d1acbd8b78b59, type: 3}
-      propertyPath: mascotRigidBody
-      value: 
-      objectReference: {fileID: 7543414325940808446}
     - target: {fileID: 1885269326628906887, guid: 650b399d2a293e54794d1acbd8b78b59, type: 3}
       propertyPath: mascotHeadPosition
       value: 
