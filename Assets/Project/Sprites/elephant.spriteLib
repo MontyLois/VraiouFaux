@@ -17,93 +17,68 @@ MonoBehaviour:
     m_Hash: 1032767545
     m_CategoryList: []
     m_OverrideEntries:
-    - m_Name: "T\xEAte"
-      m_Hash: 221064813
-      m_Sprite: {fileID: 6619894239969655506, guid: 8a15550f9ade08942888643519b69777, type: 3}
-      m_FromMain: 0
-      m_SpriteOverride: {fileID: 6619894239969655506, guid: 8a15550f9ade08942888643519b69777, type: 3}
     - m_Name: "t\xEAte"
       m_Hash: 216793449
-      m_Sprite: {fileID: -7664629869629645166, guid: a1f23137fba00bc428c52c311b8ce718, type: 3}
+      m_Sprite: {fileID: 6869484934484797489, guid: f5c1e23eb48f41049ac2698fd9f82052, type: 3}
       m_FromMain: 0
-      m_SpriteOverride: {fileID: -7664629869629645166, guid: a1f23137fba00bc428c52c311b8ce718, type: 3}
+      m_SpriteOverride: {fileID: 6869484934484797489, guid: f5c1e23eb48f41049ac2698fd9f82052, type: 3}
+    - m_Name: "T\xEAte"
+      m_Hash: 221064813
+      m_Sprite: {fileID: 7645130212266109028, guid: f5c1e23eb48f41049ac2698fd9f82052, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 7645130212266109028, guid: f5c1e23eb48f41049ac2698fd9f82052, type: 3}
+    - m_Name: "T\xEAte_0"
+      m_Hash: 380024512
+      m_Sprite: {fileID: 3927062275545556187, guid: f5c1e23eb48f41049ac2698fd9f82052, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 3927062275545556187, guid: f5c1e23eb48f41049ac2698fd9f82052, type: 3}
     m_FromMain: 0
-    m_EntryOverrideCount: 2
+    m_EntryOverrideCount: 3
   - m_Name: corps
     m_Hash: 179566747
     m_CategoryList: []
     m_OverrideEntries:
+    - m_Name: torse
+      m_Hash: 126506395
+      m_Sprite: {fileID: 4966698260696493199, guid: f5c1e23eb48f41049ac2698fd9f82052, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 4966698260696493199, guid: f5c1e23eb48f41049ac2698fd9f82052, type: 3}
     - m_Name: Torse
       m_Hash: 105609887
-      m_Sprite: {fileID: -4173708294496125871, guid: 8a15550f9ade08942888643519b69777, type: 3}
+      m_Sprite: {fileID: -2866358308214370277, guid: f5c1e23eb48f41049ac2698fd9f82052, type: 3}
       m_FromMain: 0
-      m_SpriteOverride: {fileID: -4173708294496125871, guid: 8a15550f9ade08942888643519b69777, type: 3}
+      m_SpriteOverride: {fileID: -2866358308214370277, guid: f5c1e23eb48f41049ac2698fd9f82052, type: 3}
+    - m_Name: Torse_0
+      m_Hash: 472542068
+      m_Sprite: {fileID: 7278361119134087954, guid: f5c1e23eb48f41049ac2698fd9f82052, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 7278361119134087954, guid: f5c1e23eb48f41049ac2698fd9f82052, type: 3}
     m_FromMain: 0
-    m_EntryOverrideCount: 1
+    m_EntryOverrideCount: 3
   - m_Name: jambe droite
     m_Hash: 728726115
     m_CategoryList: []
-    m_OverrideEntries:
-    - m_Name: Jambes haut droite
-      m_Hash: 1032589270
-      m_Sprite: {fileID: -5385040522201739193, guid: 8a15550f9ade08942888643519b69777, type: 3}
-      m_FromMain: 0
-      m_SpriteOverride: {fileID: -5385040522201739193, guid: 8a15550f9ade08942888643519b69777, type: 3}
-    - m_Name: Jambe bas droite
-      m_Hash: 528593753
-      m_Sprite: {fileID: 5959735283182051694, guid: 8a15550f9ade08942888643519b69777, type: 3}
-      m_FromMain: 0
-      m_SpriteOverride: {fileID: 5959735283182051694, guid: 8a15550f9ade08942888643519b69777, type: 3}
+    m_OverrideEntries: []
     m_FromMain: 0
-    m_EntryOverrideCount: 2
+    m_EntryOverrideCount: 0
   - m_Name: bras gauche
     m_Hash: 14074120
     m_CategoryList: []
-    m_OverrideEntries:
-    - m_Name: Bras haut gauche
-      m_Hash: 468475635
-      m_Sprite: {fileID: 7109678769503673845, guid: 8a15550f9ade08942888643519b69777, type: 3}
-      m_FromMain: 0
-      m_SpriteOverride: {fileID: 7109678769503673845, guid: 8a15550f9ade08942888643519b69777, type: 3}
-    - m_Name: Bras bas gauche
-      m_Hash: 1019592478
-      m_Sprite: {fileID: 7115690443891731530, guid: 8a15550f9ade08942888643519b69777, type: 3}
-      m_FromMain: 0
-      m_SpriteOverride: {fileID: 7115690443891731530, guid: 8a15550f9ade08942888643519b69777, type: 3}
+    m_OverrideEntries: []
     m_FromMain: 0
-    m_EntryOverrideCount: 2
+    m_EntryOverrideCount: 0
   - m_Name: bras droit
     m_Hash: 603482241
     m_CategoryList: []
-    m_OverrideEntries:
-    - m_Name: Bras haut droit
-      m_Hash: 130649662
-      m_Sprite: {fileID: -103044983013719991, guid: 8a15550f9ade08942888643519b69777, type: 3}
-      m_FromMain: 0
-      m_SpriteOverride: {fileID: -103044983013719991, guid: 8a15550f9ade08942888643519b69777, type: 3}
-    - m_Name: Bras bas droit
-      m_Hash: 151913178
-      m_Sprite: {fileID: 797587769831237339, guid: 8a15550f9ade08942888643519b69777, type: 3}
-      m_FromMain: 0
-      m_SpriteOverride: {fileID: 797587769831237339, guid: 8a15550f9ade08942888643519b69777, type: 3}
+    m_OverrideEntries: []
     m_FromMain: 0
-    m_EntryOverrideCount: 2
+    m_EntryOverrideCount: 0
   - m_Name: jambe gauche
     m_Hash: 520063727
     m_CategoryList: []
-    m_OverrideEntries:
-    - m_Name: Jambe bas gauche
-      m_Hash: 705774549
-      m_Sprite: {fileID: -6109172262856485857, guid: 8a15550f9ade08942888643519b69777, type: 3}
-      m_FromMain: 0
-      m_SpriteOverride: {fileID: -6109172262856485857, guid: 8a15550f9ade08942888643519b69777, type: 3}
-    - m_Name: Jambe haut gauche
-      m_Hash: 390893879
-      m_Sprite: {fileID: -1194115810669471383, guid: 8a15550f9ade08942888643519b69777, type: 3}
-      m_FromMain: 0
-      m_SpriteOverride: {fileID: -1194115810669471383, guid: 8a15550f9ade08942888643519b69777, type: 3}
+    m_OverrideEntries: []
     m_FromMain: 0
-    m_EntryOverrideCount: 2
+    m_EntryOverrideCount: 0
   m_PrimaryLibraryGUID: 
-  m_ModificationHash: 638748031535202196
+  m_ModificationHash: 638750640640497727
   m_Version: 1
