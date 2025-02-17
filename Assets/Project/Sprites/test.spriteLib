@@ -1,0 +1,144 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5e6fedc2472449cead18ef23b5cb30d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Library:
+  - m_Name: sourcil
+    m_Hash: 870328075
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: Sourcils
+      m_Hash: 895063282
+      m_Sprite: {fileID: -3848112739847844697, guid: f56e2a36487335a48836d13690ed91d9, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -3848112739847844697, guid: f56e2a36487335a48836d13690ed91d9, type: 3}
+    - m_Name: sourcils
+      m_Hash: 204469924
+      m_Sprite: {fileID: -5777908584179239559, guid: f56e2a36487335a48836d13690ed91d9, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -5777908584179239559, guid: f56e2a36487335a48836d13690ed91d9, type: 3}
+    - m_Name: Sourcils_0
+      m_Hash: 197903091
+      m_Sprite: {fileID: 5628767424072834310, guid: f56e2a36487335a48836d13690ed91d9, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 5628767424072834310, guid: f56e2a36487335a48836d13690ed91d9, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 3
+  - m_Name: yeux
+    m_Hash: 905530748
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: Yeux
+      m_Hash: 365683266
+      m_Sprite: {fileID: 147493567195419424, guid: f56e2a36487335a48836d13690ed91d9, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 147493567195419424, guid: f56e2a36487335a48836d13690ed91d9, type: 3}
+    - m_Name: Yeux_0
+      m_Hash: 375920848
+      m_Sprite: {fileID: 3247267844295988185, guid: f56e2a36487335a48836d13690ed91d9, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 3247267844295988185, guid: f56e2a36487335a48836d13690ed91d9, type: 3}
+    - m_Name: Yeux_1
+      m_Hash: 560932934
+      m_Sprite: {fileID: 2891118100895298800, guid: f56e2a36487335a48836d13690ed91d9, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 2891118100895298800, guid: f56e2a36487335a48836d13690ed91d9, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 3
+  - m_Name: tete
+    m_Hash: 1032767545
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: "t\xEAte"
+      m_Hash: 216793449
+      m_Sprite: {fileID: -9042632422660961200, guid: f56e2a36487335a48836d13690ed91d9, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -9042632422660961200, guid: f56e2a36487335a48836d13690ed91d9, type: 3}
+    - m_Name: "T\xEAte_0"
+      m_Hash: 380024512
+      m_Sprite: {fileID: 2460603872673304387, guid: f56e2a36487335a48836d13690ed91d9, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 2460603872673304387, guid: f56e2a36487335a48836d13690ed91d9, type: 3}
+    - m_Name: "T\xEAte"
+      m_Hash: 221064813
+      m_Sprite: {fileID: -3745530340486005580, guid: f56e2a36487335a48836d13690ed91d9, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -3745530340486005580, guid: f56e2a36487335a48836d13690ed91d9, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 3
+  - m_Name: corps
+    m_Hash: 179566747
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: Torse
+      m_Hash: 105609887
+      m_Sprite: {fileID: -1208525014102838956, guid: f56e2a36487335a48836d13690ed91d9, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1208525014102838956, guid: f56e2a36487335a48836d13690ed91d9, type: 3}
+    - m_Name: torse
+      m_Hash: 126506395
+      m_Sprite: {fileID: 9113057420215574233, guid: f56e2a36487335a48836d13690ed91d9, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 9113057420215574233, guid: f56e2a36487335a48836d13690ed91d9, type: 3}
+    - m_Name: Torse_0
+      m_Hash: 472542068
+      m_Sprite: {fileID: -1931489935591503756, guid: f56e2a36487335a48836d13690ed91d9, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1931489935591503756, guid: f56e2a36487335a48836d13690ed91d9, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 3
+  - m_Name: oreille
+    m_Hash: 81366068
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: Antennes
+      m_Hash: 315311158
+      m_Sprite: {fileID: 8235519765807132922, guid: f56e2a36487335a48836d13690ed91d9, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 8235519765807132922, guid: f56e2a36487335a48836d13690ed91d9, type: 3}
+    - m_Name: Oreilles
+      m_Hash: 63471716
+      m_Sprite: {fileID: 7813734073961851841, guid: f56e2a36487335a48836d13690ed91d9, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 7813734073961851841, guid: f56e2a36487335a48836d13690ed91d9, type: 3}
+    - m_Name: oreilles
+      m_Hash: 985588274
+      m_Sprite: {fileID: 7473618519670103952, guid: f56e2a36487335a48836d13690ed91d9, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 7473618519670103952, guid: f56e2a36487335a48836d13690ed91d9, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 3
+  - m_Name: bouche
+    m_Hash: 688963265
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: bouche
+      m_Hash: 688963265
+      m_Sprite: {fileID: 365860439702868269, guid: f56e2a36487335a48836d13690ed91d9, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 365860439702868269, guid: f56e2a36487335a48836d13690ed91d9, type: 3}
+    - m_Name: Trompe basse
+      m_Hash: 306274148
+      m_Sprite: {fileID: -8538924791315370360, guid: f56e2a36487335a48836d13690ed91d9, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -8538924791315370360, guid: f56e2a36487335a48836d13690ed91d9, type: 3}
+    - m_Name: Trompe haute
+      m_Hash: 322809264
+      m_Sprite: {fileID: -3062936552940254510, guid: f56e2a36487335a48836d13690ed91d9, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -3062936552940254510, guid: f56e2a36487335a48836d13690ed91d9, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 3
+  m_PrimaryLibraryGUID: 
+  m_ModificationHash: 638754044961578960
+  m_Version: 1
