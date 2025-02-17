@@ -52,9 +52,6 @@ public class MascotPlazzaMovement : MonoBehaviour
                 return hit.collider.gameObject;
             }
         }
-
-        
-        
         return null;
     }
 

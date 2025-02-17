@@ -42,6 +42,7 @@ namespace VraiOuFaux.Game
                 MascotData mascot = mascots[i];
                 questionsList.Add(new Question(mascot.Question, mascot));
             }
+            Debug.Log(mascots.Length);
             
             // store question in queue in random order 
             int capacity = Mathf.Min(questionCount, questionsList.Count);
@@ -71,12 +72,14 @@ namespace VraiOuFaux.Game
 
         public void SeeNextQuestion()
         {
+            Debug.Log("question restante : "+ questions.Count);
             //check if there's still question left
             if (questions.TryPeek(out Question next))
             {
                 Debug.Log("New");
                 //spawn the mascot
                 currentMascot = Instantiate(next.GetAvatar(), spawnTransform);
+                Debug.Log(" wa instantiate "+ questions.Count);
                 OnNewQuestion?.Invoke(next);
             }
             else
@@ -101,6 +104,7 @@ namespace VraiOuFaux.Game
                 OnQuestionAnswered?.Invoke(currentQuestion, result);
                 currentQuestion._data.PlayerAnswer = answer;
                 playerAnswers.Add((currentQuestion,answer));
+                GameManager.Instance.AddAnswer((currentQuestion,answer));
                 //destroy the mascot
                 Destroy(currentMascot);
                 //start new question

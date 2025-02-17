@@ -15,11 +15,13 @@ namespace VraiOuFaux.Game
          private void OnEnable()
          {
              InputManager.Instance.OnTouchEvent += MoveMascot;
+             QuestionManager.Instance.OnNewQuestion += ResetSwipe;
          }
 
          private void OnDisable()
          {
              InputManager.Instance.OnTouchEvent -= MoveMascot;
+             QuestionManager.Instance.OnNewQuestion -= ResetSwipe;
          }
 
          public void MoveMascot(TouchState touch)
@@ -28,7 +30,6 @@ namespace VraiOuFaux.Game
                     Vector2 delta = touch.delta;
                     if (Camera.main != null)
                     {
-                        Debug.Log("phase : " + touch.phase);
                         if (!isSwiped)
                         {
                             bool choice = GetTrueOrFalse(position, out bool isMiddle);
@@ -39,17 +40,24 @@ namespace VraiOuFaux.Game
         
                             if (touch.phase == TouchPhase.Ended)
                             {
+                                Debug.Log("We are throwing");
                                 if (isMiddle)
                                 {
                                     QuestionManager.Instance.ResetCurrentMascot();
                                 }
                                 else
                                 {
+                                    isSwiped = true;
                                     QuestionManager.Instance.ThrowMascot(choice, delta);
                                 }
                             }
                         }
                     }
+         }
+
+         public void ResetSwipe(Question q)
+         {
+             isSwiped = false;
          }
         
                 /*

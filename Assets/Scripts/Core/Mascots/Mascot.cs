@@ -62,7 +62,7 @@ namespace VraiOuFaux.Game
             }
             else
             {
-                mascotRigidBody.AddForce(force);
+                mascotRigidBody.AddForce(force*-1);
             }
         }
         

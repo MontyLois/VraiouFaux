@@ -9,6 +9,12 @@ namespace VraiOuFaux.Core
     {
         public  List<(Question, bool)> playerAnswers { get; private set; }
 
+        protected override void Awake()
+        {
+            base.Awake();
+            DontDestroyOnLoad(this);
+        }
+
         private void Start()
         {
             playerAnswers = new List<(Question, bool)>();

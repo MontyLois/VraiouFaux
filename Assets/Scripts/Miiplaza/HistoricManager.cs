@@ -30,14 +30,17 @@ public class HistoricManager : MonoSingleton<HistoricManager>
         int z = 0;
         
         Vector3 position = new Vector3(spawnTransform.position.x,spawnTransform.position.y, spawnTransform.position.z );
-
-        List<(Question, bool)> playerAnswers = GameManager.Instance.playerAnswers;
+        List<(Question, bool)> playerAnswers = new List<(Question, bool)>();
+        playerAnswers = GameManager.Instance.playerAnswers;
+        Debug.Log(GameManager.Instance.playerAnswers);
+        answersDictionary = new Dictionary<GameObject, (Question, bool)>();
+        
         foreach (var answer in playerAnswers)
         {
             GameObject mascot_body = Instantiate(answer.Item1.MascotData.Avatar,position, spawnTransform.rotation,spawnTransform);
             answersDictionary.Add(mascot_body, answer);
             
-            //handle position offset for spawning mascot
+            //handle position offset for spawning mascot 
             if (x == xmax)
             {
                 z++;
