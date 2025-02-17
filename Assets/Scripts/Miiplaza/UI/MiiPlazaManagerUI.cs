@@ -1,7 +1,9 @@
 using System;
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using VraiOuFaux.Core.Mascots;
+using VraiOuFaux.Game;
 
 public class MiiPlazaUIManager : MonoBehaviour
 {
@@ -13,6 +15,9 @@ public class MiiPlazaUIManager : MonoBehaviour
     private TextMeshProUGUI questionSolution;
     [field: SerializeField]
     private TextMeshProUGUI questionExplaination;
+   
+    [field: SerializeField]
+    private Dictionary<GameObject, GameObject> uiToClose;
 
     public void OnEnable()
     {
@@ -27,16 +32,17 @@ public class MiiPlazaUIManager : MonoBehaviour
         HistoricManager.Instance.OnMascotUnselected -= CloseMascotSelectedUI;
     }
 
-    private void MascotSelectedUI(MascotData mascotdata)
+    private void MascotSelectedUI(Question question)
     {
+        questionText.text = question.GetAffirmation().GetLocalizedString();
+        questionSolution.text = question.GetSolution().GetLocalizedString();
+        questionExplaination.text = question.GetExplaination().GetLocalizedString();
         selected_Mascot_UI.SetActive(true);
-        questionText.text = mascotdata.Question.QuestionText;
-        questionSolution.text = mascotdata.Question.SolutionText;
-        questionExplaination.text = mascotdata.Question.Explanation;
     }
 
     private void CloseMascotSelectedUI()
     {
         selected_Mascot_UI.SetActive(false);
     }
+    
 }

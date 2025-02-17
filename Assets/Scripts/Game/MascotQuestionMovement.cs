@@ -48,7 +48,7 @@ namespace VraiOuFaux.Game
                                 else
                                 {
                                     isSwiped = true;
-                                    QuestionManager.Instance.ThrowMascot(choice, delta);
+                                    QuestionManager.Instance.ThrowMascot(choice, position);
                                 }
                             }
                         }

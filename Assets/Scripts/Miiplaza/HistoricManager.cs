@@ -21,7 +21,7 @@ public class HistoricManager : MonoSingleton<HistoricManager>
     
     private Dictionary<GameObject, (Question,bool)> answersDictionary;
     
-    public event Action<MascotData> OnMascotSelected;
+    public event Action<Question> OnMascotSelected;
     public event Action OnMascotUnselected;
 
     private void Start()
@@ -67,7 +67,7 @@ public class HistoricManager : MonoSingleton<HistoricManager>
             selectedMascot = mascot;
             selectedMascot.GetComponent<Transform>().SetParent(selectionTransform);
             MoveCurrentMascot(Vector3.zero);
-            OnMascotSelected?.Invoke(answersDictionary[selectedMascot].Item1.MascotData);
+            OnMascotSelected?.Invoke(answersDictionary[selectedMascot].Item1);
         }
     }
     

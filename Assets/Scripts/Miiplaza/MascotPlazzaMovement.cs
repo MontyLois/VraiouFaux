@@ -6,25 +6,31 @@ using VraiOuFaux.Game;
 using TouchPhase = UnityEngine.InputSystem.TouchPhase;
 
 public class MascotPlazzaMovement : MonoBehaviour
-{private void OnEnable()
+{
+    private bool canSelect = true;
+    
+    private void OnEnable()
     {
         InputManager.Instance.OnTouchEvent += MoveMascot;
+        HistoricManager.Instance.OnMascotUnselected += ResetSelectable;
     }
 
     private void OnDisable()
     {
         InputManager.Instance.OnTouchEvent -= MoveMascot;
+        HistoricManager.Instance.OnMascotUnselected -= ResetSelectable;
     }
 
     
     public void MoveMascot(TouchState touch)
     {
-        if(touch.phase == TouchPhase.Ended)
+        if(touch.phase == TouchPhase.Ended && canSelect)
         {
             GameObject mascot = IsMouseOverMascot(touch.position);
             if (mascot)
             {
                 HistoricManager.Instance.SelectMascot(mascot);
+                canSelect = false;
             }
         }
     }
@@ -53,6 +59,11 @@ public class MascotPlazzaMovement : MonoBehaviour
             }
         }
         return null;
+    }
+
+    private void ResetSelectable()
+    {
+        canSelect = true;
     }
 
 }

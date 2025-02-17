@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Localization;
 
 namespace VraiOuFaux.Core.Questions
 {
@@ -17,5 +18,14 @@ namespace VraiOuFaux.Core.Questions
         public string Explanation { get; private set; }
         [field: SerializeField]
         public bool PlayerAnswer { get; set; }
+        
+        [field: SerializeField]
+        public LocalizedString Question_Key_Text { get; private set; }
+        
+        [field: SerializeField]
+        public LocalizedString Solution_Key_Text { get; private set; }
+        
+        [field: SerializeField]
+        public LocalizedString Explaination_Key_Text { get; private set; }
     }
 }

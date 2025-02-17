@@ -1,6 +1,8 @@
 using System.Collections.Generic;
 using LTX.Singletons;
 using UnityEngine;
+using UnityEngine.Localization;
+using UnityEngine.Localization.Settings;
 using VraiOuFaux.Game;
 
 namespace VraiOuFaux.Core

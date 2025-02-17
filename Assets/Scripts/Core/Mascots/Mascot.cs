@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Analytics;
 using UnityEngine.EventSystems;
 using Action = System.Action;
 
@@ -15,11 +17,13 @@ namespace VraiOuFaux.Game
         [SerializeField]
         private Vector3 initialPosition;
         [SerializeField]
-        private Rigidbody mascotRigidBody;
-        [SerializeField]
         private SpriteRenderer renderImage;
 
         private bool isSwiped;
+        private float time = 0;
+        private float direction = 1;
+        private float xposition =0;
+        private float yposition =0;   
         
         // Start is called once before the first execution of Update after the MonoBehaviour is created
         void Start()
@@ -31,6 +35,15 @@ namespace VraiOuFaux.Game
             isSwiped = false;
             
             transform.rotation = Quaternion.Euler(Camera.main.transform.rotation.eulerAngles.x,0f,0f);
+        }
+
+        private void FixedUpdate()
+        {
+            if (isSwiped)
+            {
+                time ++;
+                SwipeMascot(time,direction);
+            }
         }
 
         public void GetDragged(Vector2 position)
@@ -52,18 +65,31 @@ namespace VraiOuFaux.Game
         {
             mascotHeadPosition.position = initialPosition;
         }
+        
 
-        public void ThrowMascot(bool choice, Vector2 delta)
+        public void Swipe(bool choice)
         {
-            Vector2 force = new Vector2(200*Mathf.Sign(delta.x), delta.y * 50);
             if (choice)
             {
-                mascotRigidBody.AddForce(force);
+                direction = -1f;
             }
             else
             {
-                mascotRigidBody.AddForce(force*-1);
+                direction = 1f;
             }
+
+            Debug.Log("x position  "+ mascotHeadPosition.position.x+" y position : "+mascotHeadPosition.position.y);
+            xposition = mascotHeadPosition.localPosition.x;
+            yposition = mascotHeadPosition.localPosition.y;
+            
+            isSwiped = true;
+        }
+        private void SwipeMascot(float time, float direction)
+        {
+            float y = 0.1f * Mathf.Sqrt(time-xposition)+yposition;
+            float x = direction*time*0.1f + xposition;
+            Vector3 position = new Vector3(x, y, 0);
+            mascotHeadPosition.SetLocalPositionAndRotation(position, mascotHeadPosition.localRotation);
         }
         
         

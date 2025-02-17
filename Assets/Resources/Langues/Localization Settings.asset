@@ -16,6 +16,11 @@ MonoBehaviour:
   - rid: 6152046042192543744
   - rid: 6152046042192543745
   - rid: 6152046042192543746
+  - rid: 6152046126635941972
+  - rid: 6152046126635941999
+  - rid: 6152046126635942000
+  - rid: 6152046126635942001
+  - rid: 6152046126635942002
   m_AvailableLocales:
     rid: 6152046042192543747
   m_AssetDatabase:
@@ -205,3 +210,28 @@ MonoBehaviour:
         - default
         - d
         - 
+    - rid: 6152046126635941972
+      type: {class: SpecificLocaleSelector, ns: UnityEngine.Localization.Settings, asm: Unity.Localization}
+      data:
+        m_LocaleId:
+          m_Code: fr
+    - rid: 6152046126635941999
+      type: {class: SpecificLocaleSelector, ns: UnityEngine.Localization.Settings, asm: Unity.Localization}
+      data:
+        m_LocaleId:
+          m_Code: es
+    - rid: 6152046126635942000
+      type: {class: SpecificLocaleSelector, ns: UnityEngine.Localization.Settings, asm: Unity.Localization}
+      data:
+        m_LocaleId:
+          m_Code: zh-Hans
+    - rid: 6152046126635942001
+      type: {class: SpecificLocaleSelector, ns: UnityEngine.Localization.Settings, asm: Unity.Localization}
+      data:
+        m_LocaleId:
+          m_Code: ar
+    - rid: 6152046126635942002
+      type: {class: SpecificLocaleSelector, ns: UnityEngine.Localization.Settings, asm: Unity.Localization}
+      data:
+        m_LocaleId:
+          m_Code: ru
