@@ -8,6 +8,7 @@ using TouchPhase = UnityEngine.InputSystem.TouchPhase;
 public class MascotPlazzaMovement : MonoBehaviour
 {
     private bool canSelect = true;
+    private GameObject mascot;
     
     private void OnEnable()
     {
@@ -24,6 +25,10 @@ public class MascotPlazzaMovement : MonoBehaviour
     
     public void MoveMascot(TouchState touch)
     {
+        if (!mascot && touch.phase == TouchPhase.Began)
+        {
+            canSelect = true;
+        }
         if(touch.phase == TouchPhase.Ended && canSelect)
         {
             GameObject mascot = IsMouseOverMascot(touch.position);
@@ -63,7 +68,8 @@ public class MascotPlazzaMovement : MonoBehaviour
 
     private void ResetSelectable()
     {
-        canSelect = true;
+        mascot = null;
+        //canSelect = true;
     }
 
 }

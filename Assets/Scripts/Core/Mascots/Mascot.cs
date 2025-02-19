@@ -67,31 +67,28 @@ namespace VraiOuFaux.Game
         }
         
 
-        public void Swipe(bool choice)
+        public void SetSwipe(bool choice)
         {
             if (choice)
             {
-                direction = -1f;
+                direction = 1f;
             }
             else
             {
-                direction = 1f;
+                direction = -1f;
             }
-
-            Debug.Log("x position  "+ mascotHeadPosition.position.x+" y position : "+mascotHeadPosition.position.y);
-            xposition = mascotHeadPosition.localPosition.x;
-            yposition = mascotHeadPosition.localPosition.y;
-            
+            xposition = mascotHeadPosition.localRotation.x;
+            yposition = mascotHeadPosition.localRotation.y;
             isSwiped = true;
         }
+        
         private void SwipeMascot(float time, float direction)
         {
-            float y = 0.1f * Mathf.Sqrt(time-xposition)+yposition;
-            float x = direction*time*0.1f + xposition;
-            Vector3 position = new Vector3(x, y, 0);
-            mascotHeadPosition.SetLocalPositionAndRotation(position, mascotHeadPosition.localRotation);
+            //make beautiful swipe curve
+            float y = (0.08f * Mathf.Sqrt(time-xposition));
+            float x = direction*time*0.05f;
+            mascotHeadPosition.Translate(x, y, 0);
         }
-        
         
 
         public void DoAnim(Action callback)

@@ -123,8 +123,7 @@ namespace VraiOuFaux.Game
 
         public void ThrowMascot(bool choice, Vector2 delta)
         {
-            //currentMascot.GetComponent<Mascot>().ThrowMascot(choice, delta);
-            currentMascot.GetComponent<Mascot>().Swipe(choice);
+            currentMascot.GetComponent<Mascot>().SetSwipe(choice);
             StartCoroutine(IAnswerQuestion(choice));
             
         }
