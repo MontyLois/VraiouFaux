@@ -12,7 +12,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07453d4fbc2afca4798e6d8b0a851cab, type: 3}
   m_Name: q1
   m_EditorClassIdentifier: 
+  <QuestionID>k__BackingField: 
   <QuestionText>k__BackingField: Fumer augmente les risques de cancer de la peau.
-  <Solution>k__BackingField: 0
+  <SolutionB>k__BackingField: 0
+  <SolutionText>k__BackingField: 
   <Explanation>k__BackingField: Fumer peut entrainer un cancer du poumon, mais pas
     de la peau
+  <PlayerAnswer>k__BackingField: 1
+  <Question_Key_Text>k__BackingField:
+    m_TableReference:
+      m_TableCollectionName: GUID:b8a139a0cbba0f54ba8b45426452be1c
+    m_TableEntryReference:
+      m_KeyId: 252170657792
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  <Solution_Key_Text>k__BackingField:
+    m_TableReference:
+      m_TableCollectionName: GUID:b8a139a0cbba0f54ba8b45426452be1c
+    m_TableEntryReference:
+      m_KeyId: 250069311488
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  <Explaination_Key_Text>k__BackingField:
+    m_TableReference:
+      m_TableCollectionName: GUID:b8a139a0cbba0f54ba8b45426452be1c
+    m_TableEntryReference:
+      m_KeyId: 450158583808
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.Localization.Components;
 
 namespace VraiOuFaux.Game.UI
 {
@@ -10,7 +11,8 @@ namespace VraiOuFaux.Game.UI
 
         public void Sync(Question question)
         {
-            text.text = question.GetText();
+            var localizedString = question.GetAffirmation().GetLocalizedString();
+            text.text = localizedString;
         }
     }
 }
