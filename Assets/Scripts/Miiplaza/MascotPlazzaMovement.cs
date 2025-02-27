@@ -7,8 +7,8 @@ using TouchPhase = UnityEngine.InputSystem.TouchPhase;
 
 public class MascotPlazzaMovement : MonoBehaviour
 {
-    private bool canSelect = true;
-    private GameObject mascot;
+    private bool canSelect = false;
+    private GameObject mascot =null;
     
     private void OnEnable()
     {
@@ -59,7 +59,6 @@ public class MascotPlazzaMovement : MonoBehaviour
             Debug.DrawRay(ray.origin, ray.direction * hit.distance, Color.red, 1);
             if (hit.collider.CompareTag("Mascot"))
             {
-                Debug.Log("we are touching mascot");
                 return hit.collider.gameObject;
             }
         }

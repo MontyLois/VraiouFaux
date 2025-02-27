@@ -26,7 +26,5 @@ namespace VraiOuFaux.Core
         {
             playerAnswers.Add(answer);
         }
-        
-        
     }
 }

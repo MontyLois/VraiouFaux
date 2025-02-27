@@ -76,17 +76,14 @@ namespace VraiOuFaux.Game
             //check if there's still question left
             if (questions.TryPeek(out Question next))
             {
-                Debug.Log("New");
                 //spawn the mascot
                 currentMascot = Instantiate(next.GetAvatar(), spawnTransform);
-                Debug.Log(" wa instantiate "+ questions.Count);
                 OnNewQuestion?.Invoke(next);
             }
             else
             {
                 //no more question, the quizz is completed
                 OnComplete?.Invoke(playerAnswers);
-                Debug.Log("Completed");
                 SceneManager.LoadScene("HistoricTests");
             }
         }
