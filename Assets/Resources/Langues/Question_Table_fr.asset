@@ -37,6 +37,22 @@ MonoBehaviour:
       de tabac entra\xEEne 6 millions de d\xE9c\xE8s dans le monde.\r\n"
     m_Metadata:
       m_Items: []
+  - m_Id: 4460335782440960
+    m_Localized: "r\xE9glages"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4460241830031360
+    m_Localized: reprendre
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4460239347003392
+    m_Localized: "menue d\xE9marrer"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81986367184896
+    m_Localized: Pause
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

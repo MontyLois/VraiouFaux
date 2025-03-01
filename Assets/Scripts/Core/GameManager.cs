@@ -26,5 +26,11 @@ namespace VraiOuFaux.Core
         {
             playerAnswers.Add(answer);
         }
+        
+        private void OnApplicationQuit()
+        {
+            Debug.Log("Cleaning up singleton...");
+            Destroy(this); // Destroy the GameObject when quitting
+        }
     }
 }

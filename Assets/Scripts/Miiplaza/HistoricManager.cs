@@ -28,14 +28,19 @@ public class HistoricManager : MonoSingleton<HistoricManager>
 
     private void Start()
     {
-        int x = 0;
-        int z = 0;
-        
-        Vector3 position = new Vector3(spawnTransform.position.x,spawnTransform.position.y, spawnTransform.position.z );
         playerAnswers = new List<(Question, bool)>();
         playerAnswers = GameManager.Instance.playerAnswers;
         Debug.Log(GameManager.Instance.playerAnswers);
         answersDictionary = new Dictionary<GameObject, (Question, bool)>();
+        SpawnMascot();
+
+    }
+
+    private void SpawnMascot()
+    {
+        Vector3 position = new Vector3(spawnTransform.position.x,spawnTransform.position.y, spawnTransform.position.z );
+        int x = 0;
+        int z = 0;
         
         foreach (var answer in playerAnswers)
         {
@@ -61,11 +66,7 @@ public class HistoricManager : MonoSingleton<HistoricManager>
             }
         }
     }
-
-    private void SpawnMascot()
-    {
-        
-    }
+    
     public void SelectMascot(GameObject mascot)
     {
         if (!selectedMascot)
