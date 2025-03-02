@@ -498,15 +498,10 @@ MonoBehaviour:
       m_SpriteOverride: {fileID: 53736273974489677, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
     m_FromMain: 0
     m_EntryOverrideCount: 9
-  - m_Name: oreilles
-    m_Hash: 985588274
+  - m_Name: oreilles_hautes
+    m_Hash: 42605294
     m_CategoryList: []
     m_OverrideEntries:
-    - m_Name: Antennes_Abeille
-      m_Hash: 389670093
-      m_Sprite: {fileID: -6928119887513452156, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
-      m_FromMain: 0
-      m_SpriteOverride: {fileID: -6928119887513452156, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
     - m_Name: Oreilles_Chat
       m_Hash: 638191948
       m_Sprite: {fileID: -4755008414062534219, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
@@ -517,33 +512,13 @@ MonoBehaviour:
       m_Sprite: {fileID: -6773185089039479549, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
       m_FromMain: 0
       m_SpriteOverride: {fileID: -6773185089039479549, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
-    - m_Name: Oreilles_Chien
-      m_Hash: 449763016
-      m_Sprite: {fileID: 7143826987020778539, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
-      m_FromMain: 0
-      m_SpriteOverride: {fileID: 7143826987020778539, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
-    - m_Name: Oreilles_Cochon
-      m_Hash: 565426656
-      m_Sprite: {fileID: -1967932299379163818, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
-      m_FromMain: 0
-      m_SpriteOverride: {fileID: -1967932299379163818, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
-    - m_Name: Oreilles_Elephant
-      m_Hash: 650734404
-      m_Sprite: {fileID: -8571021835509771663, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
-      m_FromMain: 0
-      m_SpriteOverride: {fileID: -8571021835509771663, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
-    - m_Name: Oreilles_Lapin
-      m_Hash: 450156896
-      m_Sprite: {fileID: 8892459028142849149, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
-      m_FromMain: 0
-      m_SpriteOverride: {fileID: 8892459028142849149, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
     - m_Name: Oreilles_Souris
       m_Hash: 872046273
       m_Sprite: {fileID: -3953687138529007387, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
       m_FromMain: 0
       m_SpriteOverride: {fileID: -3953687138529007387, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
     m_FromMain: 0
-    m_EntryOverrideCount: 8
+    m_EntryOverrideCount: 3
   - m_Name: aile_G
     m_Hash: 205503672
     m_CategoryList: []
@@ -632,11 +607,6 @@ MonoBehaviour:
     m_Hash: 842405665
     m_CategoryList: []
     m_OverrideEntries:
-    - m_Name: Crete_Abeille
-      m_Hash: 108039557
-      m_Sprite: {fileID: 8138557208306064656, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
-      m_FromMain: 0
-      m_SpriteOverride: {fileID: 8138557208306064656, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
     - m_Name: Crete_Chauve-Souris
       m_Hash: 167032428
       m_Sprite: {fileID: -8753193819960319875, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
@@ -653,7 +623,7 @@ MonoBehaviour:
       m_FromMain: 0
       m_SpriteOverride: {fileID: 354432251913560686, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
     m_FromMain: 0
-    m_EntryOverrideCount: 4
+    m_EntryOverrideCount: 3
   - m_Name: queue_base
     m_Hash: 635745943
     m_CategoryList: []
@@ -788,6 +758,32 @@ MonoBehaviour:
       m_SpriteOverride: {fileID: -7620456832149952739, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
     m_FromMain: 0
     m_EntryOverrideCount: 12
+  - m_Name: oreille_basse
+    m_Hash: 883392710
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: Oreilles_Chien
+      m_Hash: 449763016
+      m_Sprite: {fileID: 7143826987020778539, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 7143826987020778539, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Oreilles_Cochon
+      m_Hash: 565426656
+      m_Sprite: {fileID: -1967932299379163818, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1967932299379163818, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Oreilles_Elephant
+      m_Hash: 650734404
+      m_Sprite: {fileID: -8571021835509771663, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -8571021835509771663, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Oreilles_Lapin
+      m_Hash: 450156896
+      m_Sprite: {fileID: 8892459028142849149, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 8892459028142849149, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 4
   m_PrimaryLibraryGUID: 
-  m_ModificationHash: 638764361100843014
+  m_ModificationHash: 638765183384394517
   m_Version: 1
