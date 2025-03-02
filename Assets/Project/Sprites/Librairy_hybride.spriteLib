@@ -498,8 +498,8 @@ MonoBehaviour:
       m_SpriteOverride: {fileID: 53736273974489677, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
     m_FromMain: 0
     m_EntryOverrideCount: 9
-  - m_Name: oreilles_hautes
-    m_Hash: 42605294
+  - m_Name: oreilles_hautes_arriere
+    m_Hash: 134707529
     m_CategoryList: []
     m_OverrideEntries:
     - m_Name: Oreilles_Chat
@@ -590,8 +590,13 @@ MonoBehaviour:
       m_Sprite: {fileID: 6839604194072179687, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
       m_FromMain: 0
       m_SpriteOverride: {fileID: 6839604194072179687, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Bouche_Serpent
+      m_Hash: 902931999
+      m_Sprite: {fileID: -5723203344265296531, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -5723203344265296531, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
     m_FromMain: 0
-    m_EntryOverrideCount: 7
+    m_EntryOverrideCount: 8
   - m_Name: bas_trompe
     m_Hash: 684624270
     m_CategoryList: []
@@ -743,9 +748,9 @@ MonoBehaviour:
       m_SpriteOverride: {fileID: 65838462441694276, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
     - m_Name: Yeux_Lapin
       m_Hash: 583887690
-      m_Sprite: {fileID: 4680238569194905131, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_Sprite: {fileID: 2091326078213273330, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
       m_FromMain: 0
-      m_SpriteOverride: {fileID: 4680238569194905131, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_SpriteOverride: {fileID: 2091326078213273330, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
     - m_Name: Yeux_Serpent
       m_Hash: 750442180
       m_Sprite: {fileID: 6436880191595084990, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
@@ -758,8 +763,8 @@ MonoBehaviour:
       m_SpriteOverride: {fileID: -7620456832149952739, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
     m_FromMain: 0
     m_EntryOverrideCount: 12
-  - m_Name: oreille_basse
-    m_Hash: 883392710
+  - m_Name: oreille_basse_avant
+    m_Hash: 389636012
     m_CategoryList: []
     m_OverrideEntries:
     - m_Name: Oreilles_Chien
@@ -772,6 +777,12 @@ MonoBehaviour:
       m_Sprite: {fileID: -1967932299379163818, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
       m_FromMain: 0
       m_SpriteOverride: {fileID: -1967932299379163818, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 2
+  - m_Name: oreille_basse_arriere
+    m_Hash: 613165663
+    m_CategoryList: []
+    m_OverrideEntries:
     - m_Name: Oreilles_Elephant
       m_Hash: 650734404
       m_Sprite: {fileID: -8571021835509771663, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
@@ -783,7 +794,40 @@ MonoBehaviour:
       m_FromMain: 0
       m_SpriteOverride: {fileID: 8892459028142849149, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
     m_FromMain: 0
-    m_EntryOverrideCount: 4
+    m_EntryOverrideCount: 2
+  - m_Name: trompe_bas
+    m_Hash: 384874195
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: Trompe-bas_Elephant
+      m_Hash: 742213016
+      m_Sprite: {fileID: 1642888835264104353, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1642888835264104353, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 1
+  - m_Name: colerette
+    m_Hash: 882572951
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: Crete_Abeille
+      m_Hash: 108039557
+      m_Sprite: {fileID: 8138557208306064656, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 8138557208306064656, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 1
+  - m_Name: cornes
+    m_Hash: 909708690
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: Antennes_Abeille
+      m_Hash: 389670093
+      m_Sprite: {fileID: -6928119887513452156, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -6928119887513452156, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 1
   m_PrimaryLibraryGUID: 
-  m_ModificationHash: 638765183384394517
+  m_ModificationHash: 638765485396045033
   m_Version: 1

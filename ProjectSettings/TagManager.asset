@@ -43,6 +43,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: oreille_arriere
+    uniqueID: 3504594561
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
