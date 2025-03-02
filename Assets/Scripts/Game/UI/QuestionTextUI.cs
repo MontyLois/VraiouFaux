@@ -10,11 +10,12 @@ namespace VraiOuFaux.Game.UI
        
         [SerializeField] 
         private LocalizeStringEvent localizedStringEvent;
-
+        
         
         public void Sync(Question question)
         {
             localizedStringEvent.StringReference.SetReference(question.GetAffirmation().TableReference,question.GetAffirmation().TableEntryReference);
+            
             localizedStringEvent.RefreshString();
         }
     }

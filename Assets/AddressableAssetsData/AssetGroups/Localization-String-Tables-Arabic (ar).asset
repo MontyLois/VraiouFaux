@@ -15,8 +15,8 @@ MonoBehaviour:
   m_GroupName: Localization-String-Tables-Arabic (ar)
   m_GUID: 46bb9657704985c4b83a4b2e29eb0313
   m_SerializeEntries:
-  - m_GUID: 4592b75bb7f92004799bddd12c32fb05
-    m_Address: testable_ar
+  - m_GUID: 1987d288395b9d24c93806c7102d324d
+    m_Address: test_ar
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-ar

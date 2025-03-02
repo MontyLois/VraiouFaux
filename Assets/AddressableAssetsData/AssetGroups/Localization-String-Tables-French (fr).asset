@@ -21,8 +21,8 @@ MonoBehaviour:
     m_SerializedLabels:
     - Locale-fr
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: f329ecc516ad8d848be990b255e5a452
-    m_Address: testable_fr
+  - m_GUID: 9428ed614e790574cb5d52205dea2caa
+    m_Address: test_fr
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-fr

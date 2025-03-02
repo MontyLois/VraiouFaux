@@ -24,6 +24,7 @@ namespace VraiOuFaux.Core
             }
             StartCoroutine(SetLocal(id));
         }
+        
         IEnumerator SetLocal(int localID)
         {
             active = true;

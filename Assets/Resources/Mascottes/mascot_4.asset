@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92dc358e1996383448df088b77a39db3, type: 3}
   m_Name: mascot_4
   m_EditorClassIdentifier: 
-  <Question>k__BackingField: {fileID: 11400000, guid: cae8221d425900c4f87810732036bd3d, type: 2}
+  <Question>k__BackingField: {fileID: 11400000, guid: 79fa6cb52c466d24ba7fc81a37d2af67, type: 2}
   <Avatar>k__BackingField: {fileID: 5076651953725276105, guid: 8c436819e373cbb49a2d6305b3f9c2d0, type: 3}
