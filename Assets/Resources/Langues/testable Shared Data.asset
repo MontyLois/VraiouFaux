@@ -10,215 +10,211 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
-  m_Name: Question_Table Shared Data
+  m_Name: testable Shared Data
   m_EditorClassIdentifier: 
-  m_TableCollectionName: Question_Table
-  m_TableCollectionNameGuidString: b8a139a0cbba0f54ba8b45426452be1c
+  m_TableCollectionName: testable
+  m_TableCollectionNameGuidString: 4d5c2fcb50072f041bbfdd66b88c0cb3
   m_Entries:
-  - m_Id: 250069311488
+  - m_Id: 65454485504
     m_Key: Question_Solution_False
     m_Metadata:
       m_Items: []
-  - m_Id: 246638370816
+  - m_Id: 65458679808
     m_Key: Question_Solution_True
     m_Metadata:
       m_Items: []
-  - m_Id: 4521781753032704
+  - m_Id: 65458679809
     m_Key: Question_1_Affirmation
     m_Metadata:
       m_Items: []
-  - m_Id: 4521781765615616
+  - m_Id: 65462874112
     m_Key: Question_1_Explanation
     m_Metadata:
       m_Items: []
-  - m_Id: 4521781765615617
+  - m_Id: 65462874113
     m_Key: Question_2_Affirmation
     m_Metadata:
       m_Items: []
-  - m_Id: 4521781765615618
+  - m_Id: 65462874114
     m_Key: Question_2_Explanation
     m_Metadata:
       m_Items: []
-  - m_Id: 4521781765615619
+  - m_Id: 65462874115
     m_Key: Question_3_Affirmation
     m_Metadata:
       m_Items: []
-  - m_Id: 4521781765615620
+  - m_Id: 65462874116
     m_Key: Question_3_Explanation
     m_Metadata:
       m_Items: []
-  - m_Id: 4521781765615621
+  - m_Id: 65462874117
     m_Key: Question_4_Affirmation
     m_Metadata:
       m_Items: []
-  - m_Id: 4521781765615622
+  - m_Id: 65462874118
     m_Key: Question_4_Explanation
     m_Metadata:
       m_Items: []
-  - m_Id: 4521781765615623
+  - m_Id: 65462874119
     m_Key: Question_5_Affirmation
     m_Metadata:
       m_Items: []
-  - m_Id: 4521781765615624
+  - m_Id: 65462874120
     m_Key: Question_5_Explanation
     m_Metadata:
       m_Items: []
-  - m_Id: 4521781765615625
+  - m_Id: 65462874121
     m_Key: Question_6_Affirmation
     m_Metadata:
       m_Items: []
-  - m_Id: 4521781765615626
+  - m_Id: 65462874122
     m_Key: Question_6_Explanation
     m_Metadata:
       m_Items: []
-  - m_Id: 4521781765615627
+  - m_Id: 65462874123
     m_Key: Question_7_Affirmation
     m_Metadata:
       m_Items: []
-  - m_Id: 4521781765615628
+  - m_Id: 65462874124
     m_Key: Question_7_Explanation
     m_Metadata:
       m_Items: []
-  - m_Id: 4521781765615629
+  - m_Id: 65462874125
     m_Key: Question_8_Affirmation
     m_Metadata:
       m_Items: []
-  - m_Id: 4521781765615630
+  - m_Id: 65462874126
     m_Key: Question_8_Explanation
     m_Metadata:
       m_Items: []
-  - m_Id: 4521781765615631
+  - m_Id: 65462874127
     m_Key: Question_9_Affirmation
     m_Metadata:
       m_Items: []
-  - m_Id: 4521781765615632
+  - m_Id: 65462874128
     m_Key: Question_9_Explanation
     m_Metadata:
       m_Items: []
-  - m_Id: 4521781769809920
+  - m_Id: 65462874129
     m_Key: Question_10_Affirmation
     m_Metadata:
       m_Items: []
-  - m_Id: 4521781769809921
+  - m_Id: 65462874130
     m_Key: Question_10_Explanation
     m_Metadata:
       m_Items: []
-  - m_Id: 4521781769809922
+  - m_Id: 65462874131
     m_Key: Question_11_Affirmation
     m_Metadata:
       m_Items: []
-  - m_Id: 4521781769809923
+  - m_Id: 65462874132
     m_Key: Question_11_Explanation
     m_Metadata:
       m_Items: []
-  - m_Id: 4521781769809924
+  - m_Id: 65462874133
     m_Key: Mascotte_FunFact_Souris
     m_Metadata:
       m_Items: []
-  - m_Id: 4521781769809925
+  - m_Id: 65462874134
     m_Key: Mascotte_FunFact_Cochon
     m_Metadata:
       m_Items: []
-  - m_Id: 4521781769809926
+  - m_Id: 65467068416
     m_Key: Mascotte_FunFact_Serpent
     m_Metadata:
       m_Items: []
-  - m_Id: 4521781769809927
+  - m_Id: 65467068417
     m_Key: Mascotte_FunFact_Chat
     m_Metadata:
       m_Items: []
-  - m_Id: 4521781769809928
+  - m_Id: 65467068418
     m_Key: Mascotte_FunFact_ChauveSouris
     m_Metadata:
       m_Items: []
-  - m_Id: 4521781769809929
+  - m_Id: 65467068419
     m_Key: Mascotte_FunFact_Abeille
     m_Metadata:
       m_Items: []
-  - m_Id: 4521781769809930
+  - m_Id: 65467068420
     m_Key: Mascotte_FunFact_Elephant
     m_Metadata:
       m_Items: []
-  - m_Id: 4521781769809931
+  - m_Id: 65467068421
     m_Key: Mascotte_FunFact_Chien
     m_Metadata:
       m_Items: []
-  - m_Id: 4521781769809932
+  - m_Id: 65467068422
     m_Key: Mascotte_Nom_Souris
     m_Metadata:
       m_Items: []
-  - m_Id: 4521781769809933
+  - m_Id: 65467068423
     m_Key: Mascotte_Nom_Cochon
     m_Metadata:
       m_Items: []
-  - m_Id: 4521781769809934
+  - m_Id: 65467068424
     m_Key: Mascotte_Nom_Serpent
     m_Metadata:
       m_Items: []
-  - m_Id: 4521781769809935
+  - m_Id: 65467068425
     m_Key: Mascotte_Nom_Chat
     m_Metadata:
       m_Items: []
-  - m_Id: 4521781769809936
+  - m_Id: 65467068426
     m_Key: Mascotte_Nom_ChauveSouris
     m_Metadata:
       m_Items: []
-  - m_Id: 4521781769809937
+  - m_Id: 65467068427
     m_Key: Mascotte_Nom_Abeille
     m_Metadata:
       m_Items: []
-  - m_Id: 4521781769809938
+  - m_Id: 65467068428
     m_Key: Mascotte_Nom_Elephant
     m_Metadata:
       m_Items: []
-  - m_Id: 4521781769809939
+  - m_Id: 65467068429
     m_Key: Mascotte_Nom_Chien
     m_Metadata:
       m_Items: []
-  - m_Id: 4521781769809940
+  - m_Id: 65467068430
     m_Key: Texte_Swipe_Juste
     m_Metadata:
       m_Items: []
-  - m_Id: 4521781769809941
+  - m_Id: 65467068431
     m_Key: Texte_Swipe_Faux
     m_Metadata:
       m_Items: []
-  - m_Id: 4521781769809942
+  - m_Id: 65467068432
     m_Key: Menu_Pause_Reglages
     m_Metadata:
       m_Items: []
-  - m_Id: 4521781769809943
+  - m_Id: 65467068433
     m_Key: Menu_Pause_Reprendre
     m_Metadata:
       m_Items: []
-  - m_Id: 4521781769809944
+  - m_Id: 65467068434
     m_Key: Menu_Pause_Recommencer
     m_Metadata:
       m_Items: []
-  - m_Id: 4521781769809945
+  - m_Id: 65467068435
     m_Key: Menu_Pause_Menu
     m_Metadata:
       m_Items: []
-  - m_Id: 4521781769809946
+  - m_Id: 65467068436
     m_Key: Menu_Principal_Jouer
     m_Metadata:
       m_Items: []
-  - m_Id: 4521781769809947
+  - m_Id: 65467068437
     m_Key: Texte_Felicitations
-    m_Metadata:
-      m_Items: []
-  - m_Id: 4529898255560704
-    m_Key: Language_label
     m_Metadata:
       m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
-    rid: 6152046126635941989
+    rid: 7125563260894445700
   references:
     version: 2
     RefIds:
-    - rid: 6152046126635941989
+    - rid: 7125563260894445700
       type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
       data:
-        m_CustomEpoch: 1739782852738
+        m_CustomEpoch: 1740860880130

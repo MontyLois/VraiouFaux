@@ -31,6 +31,21 @@ namespace VraiOuFaux.Game
             return _data.Explaination_Key_Text;
         }
         
+        public string GetAffirmationKey()
+        {
+            return _data.Affirmation_text_Key;
+        }
+        
+        public string GetSolutionKey()
+        {
+            return _data.Solution_text_Key;
+        }
+        
+        public string GetExplainationKey()
+        {
+            return _data.Explanation_text_Key;
+        }
+        
         public bool Answer(bool answer)
         {
             return _data.SolutionB == answer;

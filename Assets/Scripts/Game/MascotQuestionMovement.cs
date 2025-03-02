@@ -11,6 +11,7 @@ namespace VraiOuFaux.Game
     public class MascotQuestionMovement : MonoBehaviour
     {
          private bool isSwiped;
+         private bool canInteract=true;
 
          private void OnEnable()
          {
@@ -27,7 +28,6 @@ namespace VraiOuFaux.Game
          public void MoveMascot(TouchState touch)
          {
                     Vector2 position = touch.position;
-                    Vector2 delta = touch.delta;
                     if (Camera.main != null)
                     {
                         if (!isSwiped)
@@ -35,29 +35,35 @@ namespace VraiOuFaux.Game
                             if (!IsMouseOverUIWithIgnore(position))
                             {
                                 QuestionManager.Instance.ResetCurrentMascot();
+                                canInteract = false;
                             }
                             else
                             {
-                                if (touch.phase == TouchPhase.Began|| touch.phase == TouchPhase.Moved)
+                                if (touch.phase == TouchPhase.Began)
                                 {
-                                    if (IsMouseOverUIWithIgnore(position))
-                                    {
-                                        QuestionManager.Instance.MoveCurrentMascot(position);
-                                    }
+                                    canInteract = true;
                                 }
 
-                                if (touch.phase == TouchPhase.Ended)
+                                if (canInteract)
                                 {
-                                    bool choice = GetTrueOrFalse(position, out bool isMiddle);
-                                    Debug.Log("We are throwing");
-                                    if (isMiddle)
+                                    switch (touch.phase)
                                     {
-                                        QuestionManager.Instance.ResetCurrentMascot();
-                                    }
-                                    else
-                                    {
-                                        isSwiped = true;
-                                        QuestionManager.Instance.ThrowMascot(choice, position);
+                                        case TouchPhase.Began : QuestionManager.Instance.MoveCurrentMascot(position);
+                                            break;
+                                        case TouchPhase.Moved : QuestionManager.Instance.MoveCurrentMascot(position);
+                                            break;
+                                        case TouchPhase.Ended :
+                                            bool choice = GetTrueOrFalse(position, out bool isMiddle);
+                                            if (isMiddle)
+                                            {
+                                                QuestionManager.Instance.ResetCurrentMascot();
+                                            }
+                                            else
+                                            {
+                                                isSwiped = true;
+                                                QuestionManager.Instance.ThrowMascot(choice, position);
+                                            }
+                                            break;
                                     }
                                 }
                             }

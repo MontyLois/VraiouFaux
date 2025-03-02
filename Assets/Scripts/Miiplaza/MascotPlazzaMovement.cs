@@ -7,8 +7,8 @@ using TouchPhase = UnityEngine.InputSystem.TouchPhase;
 
 public class MascotPlazzaMovement : MonoBehaviour
 {
-    private bool canSelect = false;
-    private GameObject mascot =null;
+    private bool canSelect = true;
+    private GameObject mascot = null;
     
     private void OnEnable()
     {

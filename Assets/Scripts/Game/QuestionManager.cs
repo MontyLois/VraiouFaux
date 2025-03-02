@@ -95,10 +95,6 @@ namespace VraiOuFaux.Game
         {
             if (questions.TryDequeue(out Question currentQuestion))
             {
-                //get the player answer and invok
-                bool result = currentQuestion.Answer(answer);
-                Debug.Log(result ? "Success" : "Failure");
-                OnQuestionAnswered?.Invoke(currentQuestion, result);
                 currentQuestion._data.PlayerAnswer = answer;
                 playerAnswers.Add((currentQuestion,answer));
                 GameManager.Instance.AddAnswer((currentQuestion,answer));
@@ -111,16 +107,28 @@ namespace VraiOuFaux.Game
 
         public void MoveCurrentMascot(Vector2 position)
         {
-            currentMascot.GetComponent<Mascot>().GetDragged(position);
+            if (currentMascot)
+            {
+                currentMascot.GetComponent<Mascot>().GetDragged(position);
+            }
         }
         public void ResetCurrentMascot()
         {
-            currentMascot.GetComponent<Mascot>().ResetPosition();
+            if (currentMascot)
+            {
+                currentMascot.GetComponent<Mascot>().ResetPosition();
+            }
         }
 
         public void ThrowMascot(bool choice, Vector2 delta)
         {
             currentMascot.GetComponent<Mascot>().SetSwipe(choice);
+            if (questions.TryPeek(out Question currentQuestion))
+            {
+                bool result = currentQuestion.Answer(choice);
+                Debug.Log(result ? "Success" : "Failure");
+                OnQuestionAnswered?.Invoke(currentQuestion, result);
+            }
             StartCoroutine(IAnswerQuestion(choice));
             
         }

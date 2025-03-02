@@ -10,20 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 07453d4fbc2afca4798e6d8b0a851cab, type: 3}
-  m_Name: q1 2
+  m_Name: Question_3
   m_EditorClassIdentifier: 
   <QuestionID>k__BackingField: 
-  <QuestionText>k__BackingField: La consommation d'alcool augmente les risques de
-    cancer
+  <Affirmation_text_Key>k__BackingField: Question_3_Affirmation
+  <Solution_text_Key>k__BackingField: Question_Solution_True
+  <Explanation_text_Key>k__BackingField: Question_3_Explanation
   <SolutionB>k__BackingField: 0
-  <SolutionText>k__BackingField: 
-  <Explanation>k__BackingField: "il est n\xE9c\xE9ssaire de manger pour vivre"
   <PlayerAnswer>k__BackingField: 1
   <Question_Key_Text>k__BackingField:
     m_TableReference:
       m_TableCollectionName: GUID:b8a139a0cbba0f54ba8b45426452be1c
     m_TableEntryReference:
-      m_KeyId: 252170657792
+      m_KeyId: 4521781765615619
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
@@ -41,7 +40,7 @@ MonoBehaviour:
     m_TableReference:
       m_TableCollectionName: GUID:b8a139a0cbba0f54ba8b45426452be1c
     m_TableEntryReference:
-      m_KeyId: 450158583808
+      m_KeyId: 4521781765615620
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
