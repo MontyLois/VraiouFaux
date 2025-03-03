@@ -762,25 +762,10 @@ MonoBehaviour:
       m_SpriteOverride: {fileID: -6928119887513452156, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
     m_FromMain: 0
     m_EntryOverrideCount: 1
-  - m_Name: yeux
-    m_Hash: 905530748
+  - m_Name: yeux_ouvert
+    m_Hash: 193138085
     m_CategoryList: []
     m_OverrideEntries:
-    - m_Name: "Yeux ferm\xE9_Abeille"
-      m_Hash: 184549625
-      m_Sprite: {fileID: -2232230730232606955, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
-      m_FromMain: 0
-      m_SpriteOverride: {fileID: -2232230730232606955, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
-    - m_Name: "Yeux ferm\xE9_Lapin_Chien_Souris_Chat_Cochon_Elephant_Chauve-souris"
-      m_Hash: 582996732
-      m_Sprite: {fileID: -5907980475319734805, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
-      m_FromMain: 0
-      m_SpriteOverride: {fileID: -5907980475319734805, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
-    - m_Name: "Yeux ferm\xE9_Serpent"
-      m_Hash: 247633886
-      m_Sprite: {fileID: 4077452910202783512, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
-      m_FromMain: 0
-      m_SpriteOverride: {fileID: 4077452910202783512, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
     - m_Name: Yeux_Abeille
       m_Hash: 695747043
       m_Sprite: {fileID: -6057886583709611432, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
@@ -827,7 +812,28 @@ MonoBehaviour:
       m_FromMain: 0
       m_SpriteOverride: {fileID: 4680238569194905131, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
     m_FromMain: 0
-    m_EntryOverrideCount: 12
+    m_EntryOverrideCount: 9
+  - m_Name: yeux_ferme
+    m_Hash: 431554698
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: "Yeux ferm\xE9_Abeille"
+      m_Hash: 184549625
+      m_Sprite: {fileID: -2232230730232606955, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -2232230730232606955, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: "Yeux ferm\xE9_Lapin_Chien_Souris_Chat_Cochon_Elephant_Chauve-souris"
+      m_Hash: 582996732
+      m_Sprite: {fileID: -5907980475319734805, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -5907980475319734805, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: "Yeux ferm\xE9_Serpent"
+      m_Hash: 247633886
+      m_Sprite: {fileID: 4077452910202783512, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 4077452910202783512, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 3
   m_PrimaryLibraryGUID: 
-  m_ModificationHash: 638766031476469977
+  m_ModificationHash: 638766041368400599
   m_Version: 1
