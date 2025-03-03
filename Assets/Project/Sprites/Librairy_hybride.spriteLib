@@ -1,0 +1,839 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5e6fedc2472449cead18ef23b5cb30d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Library:
+  - m_Name: tete
+    m_Hash: 1032767545
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: Tete_Abeille
+      m_Hash: 94014997
+      m_Sprite: {fileID: -8394079071407866690, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -8394079071407866690, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Tete_Chat
+      m_Hash: 252320328
+      m_Sprite: {fileID: 4037987811688911097, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 4037987811688911097, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Tete_Chauve-Souris
+      m_Hash: 159637114
+      m_Sprite: {fileID: -7316074955871386480, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -7316074955871386480, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Tete_Chien
+      m_Hash: 495588034
+      m_Sprite: {fileID: 3481531887405463800, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 3481531887405463800, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Tete_Cochon
+      m_Hash: 23139386
+      m_Sprite: {fileID: -1429080803088738531, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1429080803088738531, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Tete_Elephant
+      m_Hash: 897153366
+      m_Sprite: {fileID: -6936973759501454445, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -6936973759501454445, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Tete_Lapin
+      m_Hash: 495983978
+      m_Sprite: {fileID: -4773470251471142072, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -4773470251471142072, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Tete_Serpent
+      m_Hash: 5773618
+      m_Sprite: {fileID: -1338490460505138409, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1338490460505138409, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Tete_Souris
+      m_Hash: 321450779
+      m_Sprite: {fileID: 4009731617464447002, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 4009731617464447002, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 9
+  - m_Name: torse
+    m_Hash: 126506395
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: Torse_Abeille
+      m_Hash: 950143780
+      m_Sprite: {fileID: -7375518598079936245, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -7375518598079936245, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Torse_Chauve-Souris
+      m_Hash: 129665181
+      m_Sprite: {fileID: -5738579283856267927, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -5738579283856267927, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Torse_Chien
+      m_Hash: 261569168
+      m_Sprite: {fileID: 4751633636392046455, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 4751633636392046455, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Torse_Cochon
+      m_Hash: 68565450
+      m_Sprite: {fileID: -7856767031237210476, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -7856767031237210476, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Torse_Elephant
+      m_Hash: 605700585
+      m_Sprite: {fileID: 5468723716459275198, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 5468723716459275198, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Torse_Lapin
+      m_Hash: 260912440
+      m_Sprite: {fileID: -1445678726602608677, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1445678726602608677, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Torse_Serpent
+      m_Hash: 1029741571
+      m_Sprite: {fileID: 1685381338678818195, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1685381338678818195, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Torse_Souris
+      m_Hash: 375381739
+      m_Sprite: {fileID: 14903268311522482, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 14903268311522482, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Torse_Chat
+      m_Hash: 634066961
+      m_Sprite: {fileID: -6434389624664850776, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -6434389624664850776, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 9
+  - m_Name: jambe_haut_G
+    m_Hash: 696765661
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: Jambe-haut G_Abeille
+      m_Hash: 931563397
+      m_Sprite: {fileID: 908662283125313838, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 908662283125313838, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Jambe-haut G_Chat
+      m_Hash: 842612783
+      m_Sprite: {fileID: 3150098354998034636, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 3150098354998034636, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Jambe-haut G_Chauve-Souris
+      m_Hash: 98592785
+      m_Sprite: {fileID: 3027226716094685389, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 3027226716094685389, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Jambe-haut G_Chien
+      m_Hash: 245486947
+      m_Sprite: {fileID: 8694129635896090215, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 8694129635896090215, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Jambe-haut G_Cochon
+      m_Hash: 543403139
+      m_Sprite: {fileID: 7551998801403667941, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 7551998801403667941, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Jambe-haut G_Elephant
+      m_Hash: 96794139
+      m_Sprite: {fileID: 3610753080789391393, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 3610753080789391393, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Jambe-haut G_Lapin
+      m_Hash: 247192267
+      m_Sprite: {fileID: 8855693831309697015, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 8855693831309697015, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Jambe-haut G_Souris
+      m_Hash: 841632674
+      m_Sprite: {fileID: 132031700082208798, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 132031700082208798, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 8
+  - m_Name: jambe_bas_G
+    m_Hash: 522846113
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: Jambe-bas G_Abeille
+      m_Hash: 817892213
+      m_Sprite: {fileID: -7068424663040765777, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -7068424663040765777, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Jambe-bas G_Chat
+      m_Hash: 442490404
+      m_Sprite: {fileID: 1174151866579528513, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1174151866579528513, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Jambe-bas G_Chauve-Souris
+      m_Hash: 802074687
+      m_Sprite: {fileID: -6727680404313008635, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -6727680404313008635, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Jambe-bas G_Chien
+      m_Hash: 429615733
+      m_Sprite: {fileID: -6687964885019732242, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -6687964885019732242, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Jambe-bas G_Cochon
+      m_Hash: 337650541
+      m_Sprite: {fileID: 2657996730333681917, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 2657996730333681917, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Jambe-bas G_Elephant
+      m_Hash: 943604363
+      m_Sprite: {fileID: -4459397905691009376, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -4459397905691009376, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Jambe-bas G_Lapin
+      m_Hash: 427910621
+      m_Sprite: {fileID: -8350827016889367889, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -8350827016889367889, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Jambe-bas G_Souris
+      m_Hash: 107594828
+      m_Sprite: {fileID: -3223142417203685589, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -3223142417203685589, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 8
+  - m_Name: jambe_haut_D
+    m_Hash: 814652775
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: Jambe-haut D_Abeille
+      m_Hash: 235649856
+      m_Sprite: {fileID: -2906921433085821509, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -2906921433085821509, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Jambe-haut D_Chat
+      m_Hash: 883765889
+      m_Sprite: {fileID: -4279628637564227533, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -4279628637564227533, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Jambe-haut D_Chauve-Souris
+      m_Hash: 345834088
+      m_Sprite: {fileID: 2193718996885026803, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 2193718996885026803, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Jambe-haut D_Chien
+      m_Hash: 1061801982
+      m_Sprite: {fileID: 265484423185952898, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 265484423185952898, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Jambe-haut D_Cochon
+      m_Hash: 787262304
+      m_Sprite: {fileID: -1727588139098022472, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1727588139098022472, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Jambe-haut D_Lapin
+      m_Hash: 1062453334
+      m_Sprite: {fileID: 3029135216524427967, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 3029135216524427967, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Jambe-haut D_Souris
+      m_Hash: 1017465921
+      m_Sprite: {fileID: -3431763612677309585, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -3431763612677309585, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Jambes-haut D_Elephant
+      m_Hash: 306566221
+      m_Sprite: {fileID: -1481952581089625658, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1481952581089625658, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 8
+  - m_Name: jambe_bas_D
+    m_Hash: 102805019
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: Jambe-bas D_Abeille
+      m_Hash: 156055472
+      m_Sprite: {fileID: 2839848901234165382, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 2839848901234165382, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Jambe-bas D_Chat
+      m_Hash: 483110026
+      m_Sprite: {fileID: 1262435598134078109, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1262435598134078109, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Jambe-bas D_Chauve-Souris
+      m_Hash: 1051974214
+      m_Sprite: {fileID: 4831447158386293228, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 4831447158386293228, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Jambe-bas D_Chien
+      m_Hash: 678654184
+      m_Sprite: {fileID: -7795592687398980926, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -7795592687398980926, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Jambe-bas D_Cochon
+      m_Hash: 447685774
+      m_Sprite: {fileID: -544227538580298283, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -544227538580298283, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Jambe-bas D_Elephant
+      m_Hash: 319420808
+      m_Sprite: {fileID: 5349043425251370056, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 5349043425251370056, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Jambe-bas D_Lapin
+      m_Hash: 678002496
+      m_Sprite: {fileID: 2921437247584120774, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 2921437247584120774, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 7
+  - m_Name: bras_haut_G
+    m_Hash: 934184762
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: Bras-haut G_Abeille
+      m_Hash: 999608700
+      m_Sprite: {fileID: -4356368518205961697, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -4356368518205961697, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Bras-haut G_Chat
+      m_Hash: 1050251243
+      m_Sprite: {fileID: 4676260795840511479, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 4676260795840511479, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Bras-haut G_Chauve-Souris
+      m_Hash: 858029275
+      m_Sprite: {fileID: -742210354999350211, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -742210354999350211, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Bras-haut G_Chien
+      m_Hash: 312767237
+      m_Sprite: {fileID: 85151909169362938, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 85151909169362938, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Bras-haut G_Cochon
+      m_Hash: 70151496
+      m_Sprite: {fileID: -4557281743246287861, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -4557281743246287861, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Bras-haut G_Elephant
+      m_Hash: 27897589
+      m_Sprite: {fileID: 8122680502077148444, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 8122680502077148444, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Bras-haut G_Lapin
+      m_Hash: 314473645
+      m_Sprite: {fileID: -6212539930210769422, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -6212539930210769422, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Bras-haut G_Serpent
+      m_Hash: 1045841499
+      m_Sprite: {fileID: -4575810553493250827, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -4575810553493250827, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Bras-haut G_Souris
+      m_Hash: 375884393
+      m_Sprite: {fileID: 5198093156502885959, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 5198093156502885959, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 9
+  - m_Name: bras_haut_D
+    m_Hash: 782751360
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: Bras-haut D_Abeille
+      m_Hash: 35253689
+      m_Sprite: {fileID: 625178180318552796, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 625178180318552796, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Bras-haut D_Chat
+      m_Hash: 940440901
+      m_Sprite: {fileID: -3332041339038952285, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -3332041339038952285, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Bras-haut D_Chauve-Souris
+      m_Hash: 576263842
+      m_Sprite: {fileID: 1407427729183536903, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1407427729183536903, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Bras-haut D_Chien
+      m_Hash: 592210328
+      m_Sprite: {fileID: 5552803991166718, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 5552803991166718, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Bras-haut D_Cochon
+      m_Hash: 178350763
+      m_Sprite: {fileID: 1289146123217192242, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1289146123217192242, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Bras-haut D_Elephant
+      m_Hash: 715003382
+      m_Sprite: {fileID: 8672928600743506792, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 8672928600743506792, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Bras-haut D_Lapin
+      m_Hash: 592864816
+      m_Sprite: {fileID: -6117044466798295567, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -6117044466798295567, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Bras-haut D_Serpent
+      m_Hash: 131824286
+      m_Sprite: {fileID: 8953176137933112206, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 8953176137933112206, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Bras-haut D_Souris
+      m_Hash: 417893770
+      m_Sprite: {fileID: -7467416414593598187, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -7467416414593598187, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 9
+  - m_Name: bras_bas_D
+    m_Hash: 781787529
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: Bras-bas D_Abeille
+      m_Hash: 755037819
+      m_Sprite: {fileID: 2127624029862096858, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 2127624029862096858, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Bras-bas D_Chat
+      m_Hash: 169824321
+      m_Sprite: {fileID: 1346174177916581728, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1346174177916581728, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Bras-bas D_Chauve-Souris
+      m_Hash: 652640262
+      m_Sprite: {fileID: 3554279386937887244, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 3554279386937887244, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Bras-bas D_Chien
+      m_Hash: 617856812
+      m_Sprite: {fileID: -6561416923490311342, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -6561416923490311342, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Bras-bas D_Cochon
+      m_Hash: 111837928
+      m_Sprite: {fileID: 59866286949696679, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 59866286949696679, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Bras-bas D_Elephant
+      m_Hash: 521908081
+      m_Sprite: {fileID: 1944517780750566493, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1944517780750566493, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Bras-bas D_Lapin
+      m_Hash: 617197700
+      m_Sprite: {fileID: -2897455507275848029, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -2897455507275848029, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Bras-bas D_Serpent
+      m_Hash: 683827548
+      m_Sprite: {fileID: -4002561959002273529, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -4002561959002273529, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Bras-bas D_Souris
+      m_Hash: 350447049
+      m_Sprite: {fileID: -2992973260929300653, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -2992973260929300653, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 9
+  - m_Name: bras_bas_G
+    m_Hash: 932212787
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: Bras-bas G_Abeille
+      m_Hash: 344836798
+      m_Sprite: {fileID: -3894774879726986094, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -3894774879726986094, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Bras-bas G_Chat
+      m_Hash: 210445039
+      m_Sprite: {fileID: -5325506680445820217, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -5325506680445820217, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Bras-bas G_Chauve-Souris
+      m_Hash: 932964991
+      m_Sprite: {fileID: 1017648724133647089, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1017648724133647089, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Bras-bas G_Chien
+      m_Hash: 356230577
+      m_Sprite: {fileID: 457648589061171459, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 457648589061171459, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Bras-bas G_Cochon
+      m_Hash: 136676619
+      m_Sprite: {fileID: 8146755583206783791, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 8146755583206783791, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Bras-bas G_Elephant
+      m_Hash: 875304050
+      m_Sprite: {fileID: 1483257288355905291, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1483257288355905291, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Bras-bas G_Lapin
+      m_Hash: 354527769
+      m_Sprite: {fileID: 574019972305394533, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 574019972305394533, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Bras-bas G_Serpent
+      m_Hash: 290413977
+      m_Sprite: {fileID: -4594210733231002933, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -4594210733231002933, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Bras-bas G_Souris
+      m_Hash: 443310634
+      m_Sprite: {fileID: 53736273974489677, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 53736273974489677, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 9
+  - m_Name: oreilles_hautes_arriere
+    m_Hash: 134707529
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: Oreilles_Chat
+      m_Hash: 638191948
+      m_Sprite: {fileID: -4755008414062534219, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -4755008414062534219, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Oreilles_Chauve-Souris
+      m_Hash: 116976960
+      m_Sprite: {fileID: -6773185089039479549, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -6773185089039479549, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Oreilles_Souris
+      m_Hash: 872046273
+      m_Sprite: {fileID: -3953687138529007387, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -3953687138529007387, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 3
+  - m_Name: aile_G
+    m_Hash: 205503672
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: Aile G_Abeille
+      m_Hash: 888748897
+      m_Sprite: {fileID: 5231616814388233747, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 5231616814388233747, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Aile G_Chauve-Souris
+      m_Hash: 478304195
+      m_Sprite: {fileID: -8751935211586453333, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -8751935211586453333, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 2
+  - m_Name: aile_D
+    m_Hash: 355921154
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: Aile D_Abeille
+      m_Hash: 225707940
+      m_Sprite: {fileID: 4387347174335151253, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 4387347174335151253, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Aile D_Chauve-Souris
+      m_Hash: 234831290
+      m_Sprite: {fileID: -3023137588984497160, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -3023137588984497160, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 2
+  - m_Name: bouche
+    m_Hash: 688963265
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: Bouche_Abeille
+      m_Hash: 806564152
+      m_Sprite: {fileID: 4641260919337756698, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 4641260919337756698, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Bouche_Chat
+      m_Hash: 534194436
+      m_Sprite: {fileID: 7083595582503620070, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 7083595582503620070, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Bouche_Chauve-Souris
+      m_Hash: 575472733
+      m_Sprite: {fileID: -6265094100609574690, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -6265094100609574690, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Bouche_Chien
+      m_Hash: 573620810
+      m_Sprite: {fileID: -7262127485614506209, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -7262127485614506209, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Bouche_Cochon
+      m_Hash: 578659832
+      m_Sprite: {fileID: -7650896560863677636, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -7650896560863677636, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Bouche_Lapin
+      m_Hash: 573230562
+      m_Sprite: {fileID: 9160613781399036508, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 9160613781399036508, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Trompe-haut_Elephant
+      m_Hash: 301490591
+      m_Sprite: {fileID: 6839604194072179687, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 6839604194072179687, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Bouche_Serpent
+      m_Hash: 902931999
+      m_Sprite: {fileID: -5723203344265296531, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -5723203344265296531, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 8
+  - m_Name: bas_trompe
+    m_Hash: 684624270
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: Trompe-bas_Elephant
+      m_Hash: 742213016
+      m_Sprite: {fileID: 1642888835264104353, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1642888835264104353, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 1
+  - m_Name: cretes
+    m_Hash: 842405665
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: Crete_Chauve-Souris
+      m_Hash: 167032428
+      m_Sprite: {fileID: -8753193819960319875, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -8753193819960319875, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Crete_Chien
+      m_Hash: 409913121
+      m_Sprite: {fileID: -6038881423834229705, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -6038881423834229705, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Crete_Cochon
+      m_Hash: 954680109
+      m_Sprite: {fileID: 354432251913560686, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 354432251913560686, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 3
+  - m_Name: queue_base
+    m_Hash: 635745943
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: Debut-queue_Serpent
+      m_Hash: 968366445
+      m_Sprite: {fileID: -2943536684758095641, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -2943536684758095641, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 1
+  - m_Name: queue_fin
+    m_Hash: 936603414
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: Fin-queue_Serpent
+      m_Hash: 852325368
+      m_Sprite: {fileID: 3180758827902791231, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 3180758827902791231, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 1
+  - m_Name: sourcil
+    m_Hash: 870328075
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: Sourcils_Abeille
+      m_Hash: 280976011
+      m_Sprite: {fileID: 4334104939496145095, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 4334104939496145095, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Sourcils_Chat
+      m_Hash: 695845069
+      m_Sprite: {fileID: 3295001287659775343, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 3295001287659775343, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Sourcils_Chauve-Souris
+      m_Hash: 788644743
+      m_Sprite: {fileID: -180519996478756933, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -180519996478756933, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Sourcils_Chien
+      m_Hash: 12457655
+      m_Sprite: {fileID: 3111725535810492919, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 3111725535810492919, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Sourcils_Cochon
+      m_Hash: 563324301
+      m_Sprite: {fileID: 7183022025070697209, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 7183022025070697209, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Sourcils_Elephant
+      m_Hash: 580641473
+      m_Sprite: {fileID: -2802741604645966382, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -2802741604645966382, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Sourcils_Lapin
+      m_Hash: 10754335
+      m_Sprite: {fileID: -2527720507304942206, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -2527720507304942206, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Sourcils_Souris
+      m_Hash: 869941932
+      m_Sprite: {fileID: 7662530655922429198, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 7662530655922429198, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 8
+  - m_Name: oreille_basse_avant
+    m_Hash: 389636012
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: Oreilles_Chien
+      m_Hash: 449763016
+      m_Sprite: {fileID: 7143826987020778539, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 7143826987020778539, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Oreilles_Cochon
+      m_Hash: 565426656
+      m_Sprite: {fileID: -1967932299379163818, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1967932299379163818, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 2
+  - m_Name: oreille_basse_arriere
+    m_Hash: 613165663
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: Oreilles_Elephant
+      m_Hash: 650734404
+      m_Sprite: {fileID: -8571021835509771663, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -8571021835509771663, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Oreilles_Lapin
+      m_Hash: 450156896
+      m_Sprite: {fileID: 8892459028142849149, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 8892459028142849149, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 2
+  - m_Name: trompe_bas
+    m_Hash: 384874195
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: Trompe-bas_Elephant
+      m_Hash: 742213016
+      m_Sprite: {fileID: 1642888835264104353, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1642888835264104353, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 1
+  - m_Name: colerette
+    m_Hash: 882572951
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: Crete_Abeille
+      m_Hash: 108039557
+      m_Sprite: {fileID: 8138557208306064656, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 8138557208306064656, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 1
+  - m_Name: cornes
+    m_Hash: 909708690
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: Antennes_Abeille
+      m_Hash: 389670093
+      m_Sprite: {fileID: -6928119887513452156, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -6928119887513452156, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 1
+  - m_Name: yeux_ouvert
+    m_Hash: 193138085
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: Yeux_Abeille
+      m_Hash: 695747043
+      m_Sprite: {fileID: -6057886583709611432, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -6057886583709611432, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Yeux_Chat
+      m_Hash: 662366190
+      m_Sprite: {fileID: -4757756227170634258, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -4757756227170634258, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Yeux_Chauve-Souris
+      m_Hash: 741109059
+      m_Sprite: {fileID: -707268571146598505, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -707268571146598505, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Yeux_Chien
+      m_Hash: 584541410
+      m_Sprite: {fileID: 4496965533652310539, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 4496965533652310539, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Yeux_Cochon
+      m_Hash: 976251268
+      m_Sprite: {fileID: 7282020878210062202, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 7282020878210062202, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Yeux_Elephant
+      m_Hash: 562810032
+      m_Sprite: {fileID: 65838462441694276, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 65838462441694276, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Yeux_Serpent
+      m_Hash: 750442180
+      m_Sprite: {fileID: 6436880191595084990, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 6436880191595084990, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Yeux_Souris
+      m_Hash: 679055013
+      m_Sprite: {fileID: -7620456832149952739, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -7620456832149952739, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Yeux_Lapin
+      m_Hash: 583887690
+      m_Sprite: {fileID: 4680238569194905131, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 4680238569194905131, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 9
+  - m_Name: yeux_ferme
+    m_Hash: 431554698
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: "Yeux ferm\xE9_Abeille"
+      m_Hash: 184549625
+      m_Sprite: {fileID: -2232230730232606955, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -2232230730232606955, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: "Yeux ferm\xE9_Lapin_Chien_Souris_Chat_Cochon_Elephant_Chauve-souris"
+      m_Hash: 582996732
+      m_Sprite: {fileID: -5907980475319734805, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -5907980475319734805, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: "Yeux ferm\xE9_Serpent"
+      m_Hash: 247633886
+      m_Sprite: {fileID: 4077452910202783512, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 4077452910202783512, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 3
+  m_PrimaryLibraryGUID: 
+  m_ModificationHash: 638766041368400599
+  m_Version: 1
