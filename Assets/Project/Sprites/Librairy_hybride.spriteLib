@@ -766,11 +766,6 @@ MonoBehaviour:
     m_Hash: 905530748
     m_CategoryList: []
     m_OverrideEntries:
-    - m_Name: Mascottes-Unies_Test-5 (1)_0
-      m_Hash: 618555881
-      m_Sprite: {fileID: 2091326078213273330, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
-      m_FromMain: 0
-      m_SpriteOverride: {fileID: 2091326078213273330, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
     - m_Name: "Yeux ferm\xE9_Abeille"
       m_Hash: 184549625
       m_Sprite: {fileID: -2232230730232606955, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
@@ -826,8 +821,13 @@ MonoBehaviour:
       m_Sprite: {fileID: -7620456832149952739, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
       m_FromMain: 0
       m_SpriteOverride: {fileID: -7620456832149952739, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Yeux_Lapin
+      m_Hash: 583887690
+      m_Sprite: {fileID: 4680238569194905131, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 4680238569194905131, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
     m_FromMain: 0
     m_EntryOverrideCount: 12
   m_PrimaryLibraryGUID: 
-  m_ModificationHash: 638765991151010045
+  m_ModificationHash: 638766031476469977
   m_Version: 1
