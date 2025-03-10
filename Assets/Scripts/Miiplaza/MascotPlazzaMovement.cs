@@ -8,6 +8,7 @@ using TouchPhase = UnityEngine.InputSystem.TouchPhase;
 public class MascotPlazzaMovement : MonoBehaviour
 {
     private bool canSelect = true;
+    private GameObject mascot = null;
     
     private void OnEnable()
     {
@@ -24,6 +25,10 @@ public class MascotPlazzaMovement : MonoBehaviour
     
     public void MoveMascot(TouchState touch)
     {
+        if (!mascot && touch.phase == TouchPhase.Began)
+        {
+            canSelect = true;
+        }
         if(touch.phase == TouchPhase.Ended && canSelect)
         {
             GameObject mascot = IsMouseOverMascot(touch.position);
@@ -41,7 +46,7 @@ public class MascotPlazzaMovement : MonoBehaviour
     private GameObject IsMouseOverMascot(Vector2 touchPosition)
     {
         
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        Ray ray = Camera.main.ScreenPointToRay(touchPosition);
         RaycastHit hit;
         
         
@@ -54,7 +59,6 @@ public class MascotPlazzaMovement : MonoBehaviour
             Debug.DrawRay(ray.origin, ray.direction * hit.distance, Color.red, 1);
             if (hit.collider.CompareTag("Mascot"))
             {
-                Debug.Log("we are touching mascot");
                 return hit.collider.gameObject;
             }
         }
@@ -63,7 +67,8 @@ public class MascotPlazzaMovement : MonoBehaviour
 
     private void ResetSelectable()
     {
-        canSelect = true;
+        mascot = null;
+        //canSelect = true;
     }
 
 }

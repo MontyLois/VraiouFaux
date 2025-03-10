@@ -23,7 +23,8 @@ namespace VraiOuFaux.Game
         private float time = 0;
         private float direction = 1;
         private float xposition =0;
-        private float yposition =0;   
+        [SerializeField, Range(0, 0.2f)] private float y_offset = 0.08f;
+        [SerializeField, Range(0, 0.2f)] private float x_offset = 0.05f;
         
         // Start is called once before the first execution of Update after the MonoBehaviour is created
         void Start()
@@ -67,31 +68,26 @@ namespace VraiOuFaux.Game
         }
         
 
-        public void Swipe(bool choice)
+        public void SetSwipe(bool choice)
         {
             if (choice)
             {
-                direction = -1f;
+                direction = 1f;
             }
             else
             {
-                direction = 1f;
+                direction = -1f;
             }
-
-            Debug.Log("x position  "+ mascotHeadPosition.position.x+" y position : "+mascotHeadPosition.position.y);
-            xposition = mascotHeadPosition.localPosition.x;
-            yposition = mascotHeadPosition.localPosition.y;
-            
             isSwiped = true;
         }
+        
         private void SwipeMascot(float time, float direction)
         {
-            float y = 0.1f * Mathf.Sqrt(time-xposition)+yposition;
-            float x = direction*time*0.1f + xposition;
-            Vector3 position = new Vector3(x, y, 0);
-            mascotHeadPosition.SetLocalPositionAndRotation(position, mascotHeadPosition.localRotation);
+            //make beautiful swipe curve
+            float y = (y_offset * Mathf.Sqrt(time));
+            float x = direction*time*x_offset;
+            mascotHeadPosition.Translate(x, y, 0);
         }
-        
         
 
         public void DoAnim(Action callback)

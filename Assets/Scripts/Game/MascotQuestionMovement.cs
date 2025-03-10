@@ -11,6 +11,7 @@ namespace VraiOuFaux.Game
     public class MascotQuestionMovement : MonoBehaviour
     {
          private bool isSwiped;
+         private bool canInteract=true;
 
          private void OnEnable()
          {
@@ -27,28 +28,43 @@ namespace VraiOuFaux.Game
          public void MoveMascot(TouchState touch)
          {
                     Vector2 position = touch.position;
-                    Vector2 delta = touch.delta;
                     if (Camera.main != null)
                     {
                         if (!isSwiped)
                         {
-                            bool choice = GetTrueOrFalse(position, out bool isMiddle);
-                            if ((touch.phase == TouchPhase.Began && IsMouseOverUIWithIgnore(position) )|| touch.phase == TouchPhase.Moved)
+                            if (!IsMouseOverUIWithIgnore(position))
                             {
-                                QuestionManager.Instance.MoveCurrentMascot(position);
+                                QuestionManager.Instance.ResetCurrentMascot();
+                                canInteract = false;
                             }
-        
-                            if (touch.phase == TouchPhase.Ended)
+                            else
                             {
-                                Debug.Log("We are throwing");
-                                if (isMiddle)
+                                if (touch.phase == TouchPhase.Began)
                                 {
-                                    QuestionManager.Instance.ResetCurrentMascot();
+                                    canInteract = true;
                                 }
-                                else
+
+                                if (canInteract)
                                 {
-                                    isSwiped = true;
-                                    QuestionManager.Instance.ThrowMascot(choice, position);
+                                    switch (touch.phase)
+                                    {
+                                        case TouchPhase.Began : QuestionManager.Instance.MoveCurrentMascot(position);
+                                            break;
+                                        case TouchPhase.Moved : QuestionManager.Instance.MoveCurrentMascot(position);
+                                            break;
+                                        case TouchPhase.Ended :
+                                            bool choice = GetTrueOrFalse(position, out bool isMiddle);
+                                            if (isMiddle)
+                                            {
+                                                QuestionManager.Instance.ResetCurrentMascot();
+                                            }
+                                            else
+                                            {
+                                                isSwiped = true;
+                                                QuestionManager.Instance.ThrowMascot(choice, position);
+                                            }
+                                            break;
+                                    }
                                 }
                             }
                         }
@@ -60,31 +76,31 @@ namespace VraiOuFaux.Game
              isSwiped = false;
          }
         
-                /*
-                 * Use GameObject with tag to determine if finger position is on the true or false side
-                 */
-                private bool GetTrueOrFalse(Vector2 touchPosition, out bool isMiddle)
-                {
-                    isMiddle = false;
-                    PointerEventData pointerEventData = new PointerEventData(EventSystem.current);
-                    pointerEventData.position = touchPosition;
+         /*
+         * Use GameObject with tag to determine if finger position is on the true or false side
+        */
+        private bool GetTrueOrFalse(Vector2 touchPosition, out bool isMiddle)
+        { 
+            isMiddle = false;
+            PointerEventData pointerEventData = new PointerEventData(EventSystem.current);
+            pointerEventData.position = touchPosition;
         
-                    List<RaycastResult> raycastResultsList = new List<RaycastResult>();
-                    EventSystem.current.RaycastAll(pointerEventData, raycastResultsList);
-                    for (int i = 0; i < raycastResultsList.Count; i++)
-                    {
-                        if (raycastResultsList[i].gameObject.CompareTag("False"))
-                        {
-                            return false;
-                        }
-                        else if (raycastResultsList[i].gameObject.CompareTag("True"))
-                        {
-                            return true;
-                        }
-                    }
-                    isMiddle = true;
-                    return default;
+            List<RaycastResult> raycastResultsList = new List<RaycastResult>();
+            EventSystem.current.RaycastAll(pointerEventData, raycastResultsList);
+            for (int i = 0; i < raycastResultsList.Count; i++)
+            {
+                if (raycastResultsList[i].gameObject.CompareTag("False"))
+                {
+                    return false;
                 }
+                else if (raycastResultsList[i].gameObject.CompareTag("True"))
+                {
+                    return true;
+                }
+            }
+            isMiddle = true;
+            return default;
+        }
         
                 /*
                  * Check if user touch UI and thus should not move the mascot

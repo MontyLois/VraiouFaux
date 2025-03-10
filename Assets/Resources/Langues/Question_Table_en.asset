@@ -26,12 +26,254 @@ MonoBehaviour:
     m_Localized: FALSE
     m_Metadata:
       m_Items: []
-  - m_Id: 252170657792
-    m_Localized: Yes tabac is bad
+  - m_Id: 4521781753032704
+    m_Localized: Tabacco is the leading cause of preventable disease and death worlwide
     m_Metadata:
       m_Items: []
-  - m_Id: 450158583808
-    m_Localized: it is bad
+  - m_Id: 4521781765615616
+    m_Localized: It is also the leading cause of cancer. Cigarettes kill more than
+      half of long-term smokers. Each year, tobacco consumption leads to 6 million
+      deaths worldwide.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4521781765615617
+    m_Localized: It is recommended to engage in 2 hours and 30 minutes of physical
+      activity per month to redce the risk of cancer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4521781765615618
+    m_Localized: The recommendation is 2 hours and 30 minutes per week of moderately
+      intense physical activity or 1 hour and 15 minutes of intense physical activity
+      per week.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4521781765615619
+    m_Localized: The healthy weight range, often described by BMI (Body Mass Index),
+      is between 18.5 and 24.9 kg/m2.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4521781765615620
+    m_Localized: Being underweight or overweight can be harmful to health; weight
+      should be adjusted according to height. BMI is calculated by dividing weight
+      in kilograms by height (in meters) squared.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4521781765615621
+    m_Localized: I can safely consume 10g of salt per day.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4521781765615622
+    m_Localized: 'It is recommended not to exceed 5-6g of salt per day. This amount
+      helps reduce the risk of stomach cancer and other diseases. Be careful: most
+      dietary salt comes from processed foods (highly processed products).'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4521781765615623
+    m_Localized: Drinking alcohol occasionally does not increase my risk of developing
+      cancer.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4521781765615624
+    m_Localized: 'Any alcohol consumption increases your risk of cancer. Alcohol
+      can cause at least six types of cancer: mouth, esophagus, throat (pharynx and
+      larynx), liver, large intestine (colon and rectum), and breast cancer.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4521781765615625
+    m_Localized: I am protected from UV rays when it is cloudy or under sunshade.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4521781765615626
+    m_Localized: Even when it is cloudy or foggy, you can still get sunburned because
+      up to 80% of UV radiation passes through clouds or mist. A beach umbrella blocks
+      only 40-50% of UV rays.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4521781765615627
+    m_Localized: Colorectal cancer screening in France starts at the age of 30 for
+      the general population.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4521781765615628
+    m_Localized: 'For colorectal cancer, organized screening is offered every 2 years
+      between ages 50 and 74. For women, breast cancer screening follows the same
+      schedule. Cervical cancer screening concerns women aged 25 to 65. (Source:
+      National Cancer Institute)'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4521781765615629
+    m_Localized: Chemical substances in the workplace interact with each other or
+      with lifestyle-related factors.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4521781765615630
+    m_Localized: In some professional environments, there is a possibility of exposure
+      to multiple carcinogenic substances, either simultaneously or sequentially.
+      Smoking significantly increases the risks associated with workplace carcinogens.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4521781765615631
+    m_Localized: 'Breastfeeding increases the risk of breast cancer. '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4521781765615632
+    m_Localized: Women who breastfeed their babies are less exposed to the risk of
+      developing breast cancer than those who do not. The risk reduction is observed
+      after 12 months of cumulative breastfeeding (for all children).
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4521781769809920
+    m_Localized: Some cancers can be prevented through vaccination.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4521781769809921
+    m_Localized: Nearly one-fifth of cancers worldwide are caused by infectious agents.
+      The hepatitis B vaccine given at birth helps reduce the risk of liver cancer,
+      and the HPV vaccine protects against cervical cancer.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4521781769809922
+    m_Localized: Smokers and former smokers are more exposed to risks associated
+      with radon exposure.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4521781769809923
+    m_Localized: Radon, a naturally occurring radioactive gas found in the Earth's
+      crust, further increases the risk of lung cancer in smokers and former smokers.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4521781769809924
+    m_Localized: Mice are essential in cancer research due to their genetic similarity
+      to humans. They help study tumor development, test treatments, and analyze
+      environmental cancer risks. Genetically modified and immunocompromised mice
+      provide insights into human cancer, making them crucial for advancing therapies.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4521781769809925
+    m_Localized: Researchers at the Technical University of Munich are using genetically
+      modified pigs to model various human cancers. Due to their physiological similarities
+      to humans, these pigs enable more relevant research. The use of "humanized"
+      pigs with transplanted human cancer tissues also shows great potential for
+      better understanding and treating these diseases.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4521781769809926
+    m_Localized: Snake venom has led to the identification of an interaction between
+      a receptor on the surface of blood platelets and a protein expressed on the
+      surface of cancer cells, which aids in cancer spread.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4521781769809927
+    m_Localized: Dogs and cats with natural cancers greatly contribute to cancer
+      research. Since their cancers are similar to those in humans, studying them
+      allows scientists to develop new treatments and prevention methods. This approach,
+      called "comparative oncology," accelerates drug development and improves treatment
+      strategies.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4521781769809928
+    m_Localized: According to a study from Oxford, bats could hold vital clues to
+      defeating cancer. Researchers examined how these animals are able to host and
+      survive infections like Covid-19. By better understanding the immune mechanisms
+      of bats, it may be possible to find a solution to prevent certain epidemics
+      and treat some diseases in humans.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4521781769809929
+    m_Localized: A component found in bee venom could be used to create an innovative
+      treatment for triple-negative or HER-2 breast cancers, suggests an Australian
+      study. While the results are promising, further research is needed before any
+      potential therapeutic outcomes.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4521781769809930
+    m_Localized: Elephants are helping cancer research because they rarely develop
+      cancer. Scientists have discovered that they possess many copies of a key cancer-fighting
+      gene (TP53), which allows their cells to self-destruct when damaged, thus preventing
+      tumor formation. This research is inspiring new methods for cancer prevention
+      and treatment for humans.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4521781769809931
+    m_Localized: Dogs and cats with natural cancers greatly contribute to cancer
+      research. Since their cancers are similar to those in humans, studying them
+      allows scientists to develop new treatments and prevention methods. This approach,
+      called "comparative oncology," accelerates drug development and improves treatment
+      strategies.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4521781769809932
+    m_Localized: Mouse
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4521781769809933
+    m_Localized: Pig
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4521781769809934
+    m_Localized: Snake
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4521781769809935
+    m_Localized: Cat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4521781769809936
+    m_Localized: Bat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4521781769809937
+    m_Localized: 'Bee '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4521781769809938
+    m_Localized: Elephant
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4521781769809939
+    m_Localized: 'Dog '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4521781769809940
+    m_Localized: Good!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4521781769809941
+    m_Localized: 'Not quite! '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4521781769809942
+    m_Localized: Settings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4521781769809943
+    m_Localized: Continue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4521781769809944
+    m_Localized: Retry
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4521781769809945
+    m_Localized: Home
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4521781769809946
+    m_Localized: PLAY
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4521781769809947
+    m_Localized: "Congratulations! You\u2019ve done an excellent job deepening your
+      knowledge of cancer prevention. Every piece of information you\u2019ve discovered
+      today is another step towards a better understanding of the disease and how
+      to prevent it.\nWhat you've learned today is valuable and makes a difference,
+      and this knowledge can not only help you but also those around you. Keep exploring,
+      asking questions, and applying what you've learned to lead a healthier and
+      more informed life! You're on the right track!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4529898255560704
+    m_Localized: Language
     m_Metadata:
       m_Items: []
   references:

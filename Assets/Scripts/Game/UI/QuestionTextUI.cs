@@ -1,18 +1,21 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.Localization;
 using UnityEngine.Localization.Components;
 
 namespace VraiOuFaux.Game.UI
 {
     public class QuestionTextUI : MonoBehaviour
     {
+       
         [SerializeField] 
-        private TextMeshProUGUI text;
-
+        private LocalizeStringEvent localizedStringEvent;
+        
+        
         public void Sync(Question question)
         {
-            var localizedString = question.GetAffirmation().GetLocalizedString();
-            text.text = localizedString;
+            localizedStringEvent.StringReference.SetReference(question.GetAffirmation().TableReference,question.GetAffirmation().TableEntryReference);
+            localizedStringEvent.RefreshString();
         }
     }
 }

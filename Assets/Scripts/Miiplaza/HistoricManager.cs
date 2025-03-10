@@ -15,25 +15,32 @@ public class HistoricManager : MonoSingleton<HistoricManager>
     [field: SerializeField]
     private Transform spawnTransform;
 
+    
     private float xoffset = 2.5f;
     private float zoffset = -1f;
     private int xmax = 2;
     
     private Dictionary<GameObject, (Question,bool)> answersDictionary;
+    private List<(Question, bool)> playerAnswers;
     
     public event Action<Question> OnMascotSelected;
     public event Action OnMascotUnselected;
 
     private void Start()
     {
-        int x = 0;
-        int z = 0;
-        
-        Vector3 position = new Vector3(spawnTransform.position.x,spawnTransform.position.y, spawnTransform.position.z );
-        List<(Question, bool)> playerAnswers = new List<(Question, bool)>();
+        playerAnswers = new List<(Question, bool)>();
         playerAnswers = GameManager.Instance.playerAnswers;
         Debug.Log(GameManager.Instance.playerAnswers);
         answersDictionary = new Dictionary<GameObject, (Question, bool)>();
+        SpawnMascot();
+
+    }
+
+    private void SpawnMascot()
+    {
+        Vector3 position = new Vector3(spawnTransform.position.x,spawnTransform.position.y, spawnTransform.position.z );
+        int x = 0;
+        int z = 0;
         
         foreach (var answer in playerAnswers)
         {
@@ -59,7 +66,7 @@ public class HistoricManager : MonoSingleton<HistoricManager>
             }
         }
     }
-
+    
     public void SelectMascot(GameObject mascot)
     {
         if (!selectedMascot)
