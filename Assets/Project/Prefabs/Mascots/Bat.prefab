@@ -25,8 +25,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -8753193819960319875, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
     - target: {fileID: 3054908336694642194, guid: bf511b9270c52444da750b29f6ed5779, type: 3}
+      propertyPath: m_labelHash
+      value: 2.4503323e-12
+      objectReference: {fileID: 0}
+    - target: {fileID: 3054908336694642194, guid: bf511b9270c52444da750b29f6ed5779, type: 3}
       propertyPath: m_SpriteHash
       value: 552438707
+      objectReference: {fileID: 0}
+    - target: {fileID: 3054908336694642194, guid: bf511b9270c52444da750b29f6ed5779, type: 3}
+      propertyPath: m_CategoryHash
+      value: 5.0479895e-32
       objectReference: {fileID: 0}
     - target: {fileID: 3116226371041564545, guid: bf511b9270c52444da750b29f6ed5779, type: 3}
       propertyPath: m_IsActive
@@ -53,8 +61,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7527483998615870913, guid: bf511b9270c52444da750b29f6ed5779, type: 3}
+      propertyPath: m_labelHash
+      value: 5.1994042e-18
+      objectReference: {fileID: 0}
+    - target: {fileID: 7527483998615870913, guid: bf511b9270c52444da750b29f6ed5779, type: 3}
       propertyPath: m_SpriteHash
       value: 176981411
+      objectReference: {fileID: 0}
+    - target: {fileID: 7527483998615870913, guid: bf511b9270c52444da750b29f6ed5779, type: 3}
+      propertyPath: m_CategoryHash
+      value: 1.912877e-23
       objectReference: {fileID: 0}
     - target: {fileID: 7766292147695200740, guid: bf511b9270c52444da750b29f6ed5779, type: 3}
       propertyPath: m_LocalPosition.x
@@ -106,7 +122,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8867429728966701447, guid: bf511b9270c52444da750b29f6ed5779, type: 3}
       propertyPath: m_Name
-      value: Mascottes-Unies_Test-5 (2) Variant
+      value: Bat
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

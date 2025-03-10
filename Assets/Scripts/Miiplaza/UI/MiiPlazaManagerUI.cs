@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using PlasticGui.WorkspaceWindow.CodeReview.ReviewChanges.Summary;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Localization;
@@ -15,6 +16,17 @@ public class MiiPlazaUIManager : MonoBehaviour
     private GameObject selected_Mascot_UI;
     [SerializeField]
     private HistoricTextUI historicTextUITextUI;
+    
+    //For Question Info 
+    [field: SerializeField] private GameObject mascot_UI;
+    [field: SerializeField] private LocalizeTextSync question_Title_Text;
+    [field: SerializeField] private LocalizeTextSync question_Solution_Text;
+    [field: SerializeField] private LocalizeTextSync question_Explaination_Text;
+    
+    //For animal info
+    [field: SerializeField] private GameObject animal_Info_UI;
+    [field: SerializeField] private LocalizeTextSync animal_Name_Text;
+    [field: SerializeField] private LocalizeTextSync animal_Info_Text;
    
     [field: SerializeField]
     private Dictionary<GameObject, GameObject> uiToClose;
@@ -23,6 +35,7 @@ public class MiiPlazaUIManager : MonoBehaviour
     {
         HistoricManager.Instance.OnMascotSelected += MascotSelectedUI;
         HistoricManager.Instance.OnMascotUnselected += CloseMascotSelectedUI;
+        HistoricManager.Instance.OnInfoAnimalOpen += AnimalOpenInfo;
         selected_Mascot_UI.SetActive(false);
     }
 
@@ -30,17 +43,49 @@ public class MiiPlazaUIManager : MonoBehaviour
     {
         HistoricManager.Instance.OnMascotSelected -= MascotSelectedUI;
         HistoricManager.Instance.OnMascotUnselected -= CloseMascotSelectedUI;
+        HistoricManager.Instance.OnInfoAnimalOpen -= AnimalOpenInfo;
     }
 
     private void MascotSelectedUI(Question question)
     {
-        historicTextUITextUI.Sync(question);
-        selected_Mascot_UI.SetActive(true);
+        //historicTextUITextUI.Sync(question);
+        QuestionUISync(question);
+        ToggleQuestionUI();
+       // selected_Mascot_UI.SetActive(true);
+    }
+
+    private void AnimalOpenInfo(Question question)
+    {
+        AnimalUISync(question);
+        ToggleAnimalUI();
     }
 
     private void CloseMascotSelectedUI()
     {
         selected_Mascot_UI.SetActive(false);
+    }
+
+    private void QuestionUISync(Question question)
+    {
+        animal_Name_Text.SyncText(question.MascotData.Animal_Name_Key_Text);
+        animal_Info_Text.SyncText(question.MascotData.Animal_Info_Key_Text);
+    }
+    
+    private void AnimalUISync(Question question)
+    {
+        question_Title_Text.SyncText(question._data.Question_Key_Text);
+        question_Solution_Text.SyncText(question._data.Solution_Key_Text);
+        question_Explaination_Text.SyncText(question._data.Explaination_Key_Text);
+    }
+    
+    public void ToggleQuestionUI()
+    {
+        mascot_UI.SetActive(!mascot_UI.activeSelf);
+    }
+    
+    public void ToggleAnimalUI()
+    {
+        animal_Info_UI.SetActive(!animal_Info_UI.activeSelf);
     }
     
 }

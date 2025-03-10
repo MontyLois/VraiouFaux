@@ -25,6 +25,7 @@ public class HistoricManager : MonoSingleton<HistoricManager>
     private List<(Question, bool)> playerAnswers;
     
     public event Action<Question> OnMascotSelected;
+    public event Action<Question> OnInfoAnimalOpen;
     public event Action OnMascotUnselected;
 
     private void Start()
@@ -102,5 +103,13 @@ public class HistoricManager : MonoSingleton<HistoricManager>
          //   SortingLayer.GetLayerValueFromName("Default");
         selectedMascot = null;
         OnMascotUnselected?.Invoke();
+    }
+
+    public void OpenInfoMascot()
+    {
+        if (answersDictionary.ContainsKey(selectedMascot))
+        {
+            OnInfoAnimalOpen?.Invoke(answersDictionary[selectedMascot].Item1);
+        }
     }
 }
