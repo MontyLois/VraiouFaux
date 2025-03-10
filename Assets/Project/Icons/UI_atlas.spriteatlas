@@ -1,0 +1,156 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: UI_atlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 4
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 1
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_IgnorePlatformSupport: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 2
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 1
+      enableAlphaDilation: 1
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: e5cd5c8d8facd32449e7001aadfefe63, type: 3}
+    - {fileID: 102900000, guid: e7befbc65bdd92a4ca7c3017993bf222, type: 3}
+    - {fileID: 102900000, guid: 568bccb12de13474bb4b8aaa0a05977b, type: 3}
+    - {fileID: 102900000, guid: 799aa4245c6b6b04ba19aaaaf5c3ceee, type: 3}
+    - {fileID: 102900000, guid: 1e70cdbddce9d444db29f68e97b23c7b, type: 3}
+    - {fileID: 102900000, guid: 7ca126be50a448a4f9d9b8eb4c0ec630, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+    packedSpriteRenderDataKeys:
+    - 2543c910f8f70884898601f1aef5eb31: 1063682249
+    - 24edcba0481acd9408c6de6a9091679e: -1791671846
+    - 77b179f0eb88c2d41b0fddd2b6487ef2: -1261360155
+    - 8b1ec2818fc28ee46be3429a33f11c56: 589802198
+    - 9a7ac7e155339b84e9b1683d35947121: 1885714156
+    - ad251252367a63e43b914def26cd3021: -856986315
+    - e6696b520b3b555438f84e6f008c8f59: -1839746792
+    - 3fd0ba23f1d64ac488f8674eadbcef7c: 85345
+    - fa4d7c641036f5c43aba67f922cdc712: -1717208079
+    - 1c9315158ea4cd448a5d30ff816f0ce2: 1454299989
+    - 3305a515780381b48acce3ec38c2a271: 1893985369
+    - 57ccab8581f0d494e87a04e444c07feb: 1855687205
+    - 4be16136060a91f4f9d25c6510a4eb63: -342798266
+    - 786c4d3636fe75248b4c6f1c2af26fcb: 933709394
+    - 193c46c6df2709042b0ccdf0113353b7: -1025813646
+    - 39229fe60b7f6c54487ef4ffa0c14540: -1851381918
+    - 55b2f2b7b6ef1c64883a5f8e8c3cdc59: 495167502
+    - 9f1f8f08d8c2a1249b11cb220691b858: -1981169802
+    - f8fec3883c09d5342877bc66921e9bb3: -218007389
+    - e27975f88a595ed449ecff6ce74ca082: 1129907735
+    - b853e0697bc11cc43bcbcbfb738b28e5: 1886262893
+    - 26cefcc9652c6764dbc72a82a2b7b87c: 949946091
+    - b652a33a044e7ca42a9b565924f92c0b: -1902960233
+    - 91749f9a13fae9d46802a50a504d2117: 1468558096
+    - e6b05a1b220f17643ab82955b1789243: 412455087
+    - a4ee6e3c0ae55e04195d3864fe05660c: 798627301
+    - f4e8d57de821366439ed09cfe6ec21a3: -111742845
+    - 090ea9bd3723c764793753f11bbf814a: -931459288
+    - d2ae52fda82c3ae47bb232ff2e593528: 1743435016
+    - b89b51de4ebfbbe45b0e75e7ed98e919: -1616569891
+    - e2089c7f2344ad541b3a9e093b0793b5: -1003306512
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 1063682249, guid: 2543c910f8f70884898601f1aef5eb31, type: 3}
+  - {fileID: -1791671846, guid: 24edcba0481acd9408c6de6a9091679e, type: 3}
+  - {fileID: -1261360155, guid: 77b179f0eb88c2d41b0fddd2b6487ef2, type: 3}
+  - {fileID: 589802198, guid: 8b1ec2818fc28ee46be3429a33f11c56, type: 3}
+  - {fileID: 1885714156, guid: 9a7ac7e155339b84e9b1683d35947121, type: 3}
+  - {fileID: -856986315, guid: ad251252367a63e43b914def26cd3021, type: 3}
+  - {fileID: -1839746792, guid: e6696b520b3b555438f84e6f008c8f59, type: 3}
+  - {fileID: 85345, guid: 3fd0ba23f1d64ac488f8674eadbcef7c, type: 3}
+  - {fileID: -1717208079, guid: fa4d7c641036f5c43aba67f922cdc712, type: 3}
+  - {fileID: 1454299989, guid: 1c9315158ea4cd448a5d30ff816f0ce2, type: 3}
+  - {fileID: 1893985369, guid: 3305a515780381b48acce3ec38c2a271, type: 3}
+  - {fileID: 1855687205, guid: 57ccab8581f0d494e87a04e444c07feb, type: 3}
+  - {fileID: -342798266, guid: 4be16136060a91f4f9d25c6510a4eb63, type: 3}
+  - {fileID: 933709394, guid: 786c4d3636fe75248b4c6f1c2af26fcb, type: 3}
+  - {fileID: -1025813646, guid: 193c46c6df2709042b0ccdf0113353b7, type: 3}
+  - {fileID: -1851381918, guid: 39229fe60b7f6c54487ef4ffa0c14540, type: 3}
+  - {fileID: 495167502, guid: 55b2f2b7b6ef1c64883a5f8e8c3cdc59, type: 3}
+  - {fileID: -1981169802, guid: 9f1f8f08d8c2a1249b11cb220691b858, type: 3}
+  - {fileID: -218007389, guid: f8fec3883c09d5342877bc66921e9bb3, type: 3}
+  - {fileID: 1129907735, guid: e27975f88a595ed449ecff6ce74ca082, type: 3}
+  - {fileID: 1886262893, guid: b853e0697bc11cc43bcbcbfb738b28e5, type: 3}
+  - {fileID: 949946091, guid: 26cefcc9652c6764dbc72a82a2b7b87c, type: 3}
+  - {fileID: -1902960233, guid: b652a33a044e7ca42a9b565924f92c0b, type: 3}
+  - {fileID: 1468558096, guid: 91749f9a13fae9d46802a50a504d2117, type: 3}
+  - {fileID: 412455087, guid: e6b05a1b220f17643ab82955b1789243, type: 3}
+  - {fileID: 798627301, guid: a4ee6e3c0ae55e04195d3864fe05660c, type: 3}
+  - {fileID: -111742845, guid: f4e8d57de821366439ed09cfe6ec21a3, type: 3}
+  - {fileID: -931459288, guid: 090ea9bd3723c764793753f11bbf814a, type: 3}
+  - {fileID: 1743435016, guid: d2ae52fda82c3ae47bb232ff2e593528, type: 3}
+  - {fileID: -1616569891, guid: b89b51de4ebfbbe45b0e75e7ed98e919, type: 3}
+  - {fileID: -1003306512, guid: e2089c7f2344ad541b3a9e093b0793b5, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - exit_0
+  - pause_deplie_0
+  - explication_sport_0
+  - explication_alcool_0
+  - bouton_fun_fact_0
+  - bouton_exit_0
+  - explication_tabac_0
+  - dialogue_0
+  - bouton_reprendre_0
+  - explication_vaccin_0
+  - explication_vierge_0
+  - explication_radiation_0
+  - bouton_menu_0
+  - false_0
+  - true_0
+  - vibration_on_0
+  - circ_0
+  - explication_allaitement_0
+  - background_0
+  - pause_replie_0
+  - explication_chimique_0
+  - explication_alimentation_0
+  - vibration_off_0
+  - bouton_demarrer_0
+  - explication_poids_0
+  - bouton_reglage_0
+  - language_0
+  - vibration_background_0
+  - background_0
+  - explication_depistage_0
+  - explication_soleil_0
+  m_RenderDataMap: {}
+  m_Tag: UI_atlas
+  m_IsVariant: 0
