@@ -67,15 +67,15 @@ public class MiiPlazaUIManager : MonoBehaviour
 
     private void QuestionUISync(Question question)
     {
-        animal_Name_Text.SyncText(question.MascotData.Animal_Name_Key_Text);
-        animal_Info_Text.SyncText(question.MascotData.Animal_Info_Key_Text);
+        question_Title_Text.SyncText(question._data.Question_Key_Text);
+        question_Solution_Text.SyncText(question._data.Solution_Key_Text);
+        question_Explaination_Text.SyncText(question._data.Explaination_Key_Text);
     }
     
     private void AnimalUISync(Question question)
     {
-        question_Title_Text.SyncText(question._data.Question_Key_Text);
-        question_Solution_Text.SyncText(question._data.Solution_Key_Text);
-        question_Explaination_Text.SyncText(question._data.Explaination_Key_Text);
+        animal_Name_Text.SyncText(question.MascotData.Animal_Name_Key_Text);
+        animal_Info_Text.SyncText(question.MascotData.Animal_Info_Key_Text);
     }
     
     public void ToggleQuestionUI()

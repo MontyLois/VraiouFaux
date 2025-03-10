@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: mascot_6
   m_EditorClassIdentifier: 
   <Question>k__BackingField: {fileID: 11400000, guid: 2c20cd2e021d10b4f9605cbd2657bd2b, type: 2}
-  <Avatar>k__BackingField: {fileID: 5076651953725276105, guid: 8c436819e373cbb49a2d6305b3f9c2d0, type: 3}
+  <Avatar>k__BackingField: {fileID: 8522022912595975085, guid: 3eddb9244c0b8ee4989b38b965a38680, type: 3}
   <Animal_Name_Key_Text>k__BackingField:
     m_TableReference:
       m_TableCollectionName: GUID:b8a139a0cbba0f54ba8b45426452be1c
