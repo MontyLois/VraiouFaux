@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Localization;
 using VraiOuFaux.Core.Questions;
 
 namespace VraiOuFaux.Core.Mascots
@@ -10,6 +11,12 @@ namespace VraiOuFaux.Core.Mascots
         public QuestionData Question { get; private set; }
         [field: SerializeField]
         public GameObject Avatar { get; private set; }
+        
+        [field: SerializeField]
+        public LocalizedString Animal_Name_Key_Text { get; private set; }
+        
+        [field: SerializeField]
+        public LocalizedString Animal_Info_Key_Text { get; private set; }
        
     }
 }

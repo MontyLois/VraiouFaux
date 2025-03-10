@@ -643,6 +643,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8653719598885068355, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
       insertIndex: -1
       addedObject: {fileID: 6130356511133671719}
+    - targetCorrespondingSourceObject: {fileID: -8653719598885068355, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6064121838566009053}
     - targetCorrespondingSourceObject: {fileID: -8027338346273431970, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
       insertIndex: -1
       addedObject: {fileID: 6610420597819979441}
@@ -1280,3 +1283,15 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!210 &6064121838566009053
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8867429728966701447}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_SortAtRoot: 0

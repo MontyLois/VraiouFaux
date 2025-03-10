@@ -11,7 +11,7 @@ namespace SaveSystem.Samples
 
         private void Awake()
         {
-            Save.SetSaveManager(new SampleSaveManager());
+            Save.AddSaveManager(new SampleSaveManager());
         }
 
         private void OnEnable()

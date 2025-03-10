@@ -49,6 +49,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: selectedMascot
+    uniqueID: 3925029399
+    locked: 0
   - name: avant
     uniqueID: 2087982445
     locked: 0

@@ -14,3 +14,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <Question>k__BackingField: {fileID: 11400000, guid: 9ff3bdcb8f387e14d8cc663dd8438636, type: 2}
   <Avatar>k__BackingField: {fileID: 5076651953725276105, guid: 8c436819e373cbb49a2d6305b3f9c2d0, type: 3}
+  <Animal_Name_Key_Text>k__BackingField:
+    m_TableReference:
+      m_TableCollectionName: GUID:b8a139a0cbba0f54ba8b45426452be1c
+    m_TableEntryReference:
+      m_KeyId: 4521781769809932
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  <Animal_Info_Key_Text>k__BackingField:
+    m_TableReference:
+      m_TableCollectionName: GUID:b8a139a0cbba0f54ba8b45426452be1c
+    m_TableEntryReference:
+      m_KeyId: 4521781769809924
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

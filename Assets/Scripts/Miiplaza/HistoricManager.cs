@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using LTX.Singletons;
 using UnityEngine;
+using UnityEngine.Rendering;
 using VraiOuFaux.Core;
 using VraiOuFaux.Core.Mascots;
 using VraiOuFaux.Game;
@@ -24,6 +25,7 @@ public class HistoricManager : MonoSingleton<HistoricManager>
     private List<(Question, bool)> playerAnswers;
     
     public event Action<Question> OnMascotSelected;
+    public event Action<Question> OnInfoAnimalOpen;
     public event Action OnMascotUnselected;
 
     private void Start()
@@ -74,7 +76,17 @@ public class HistoricManager : MonoSingleton<HistoricManager>
             selectedMascot = mascot;
             selectedMascot.GetComponent<Transform>().SetParent(selectionTransform);
             MoveCurrentMascot(Vector3.zero);
-            OnMascotSelected?.Invoke(answersDictionary[selectedMascot].Item1);
+           // selectedMascot.GetComponent<SortingGroup>().sortingLayerID =
+             //   SortingLayer.GetLayerValueFromName("selectedMascot");
+             if (answersDictionary.ContainsKey(selectedMascot))
+             {
+                 OnMascotSelected?.Invoke(answersDictionary[selectedMascot].Item1);
+             }
+             else
+             {
+                 Debug.Log("wtf the mascot isn't in the dictionary??");
+             }
+           
         }
     }
     
@@ -87,7 +99,17 @@ public class HistoricManager : MonoSingleton<HistoricManager>
     {
         selectedMascot.GetComponent<Transform>().SetParent(spawnTransform);
         selectedMascot.GetComponent<Mascot>().ResetPosition();
+        //selectedMascot.GetComponent<SortingGroup>().sortingLayerID =
+         //   SortingLayer.GetLayerValueFromName("Default");
         selectedMascot = null;
         OnMascotUnselected?.Invoke();
+    }
+
+    public void OpenInfoMascot()
+    {
+        if (answersDictionary.ContainsKey(selectedMascot))
+        {
+            OnInfoAnimalOpen?.Invoke(answersDictionary[selectedMascot].Item1);
+        }
     }
 }

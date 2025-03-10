@@ -7,7 +7,7 @@ namespace SaveSystem.Core.Default
     /// </summary>
     internal class NonImplementedSaveManager : ISaveManager
     {
-        public bool Load<T, TS>(out T save, TS settings)
+        public bool Load<T, TS>(ref T save, TS settings)
             where T : ISaveFile
             where TS : ISaveFileSettings<T>
         {
@@ -15,7 +15,6 @@ namespace SaveSystem.Core.Default
                 $"Loading {nameof(NonImplementedSaveManager)} but no manager was implemented."
                 );
 
-            save = default;
             return false;
         }
 

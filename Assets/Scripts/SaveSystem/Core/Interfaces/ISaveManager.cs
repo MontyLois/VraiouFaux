@@ -7,7 +7,7 @@
     /// </summary>
     public interface ISaveManager
     {
-        bool Load<T, TS>(out T save, TS settings)
+        bool Load<T, TS>(ref T save, TS settings)
             where T : ISaveFile
             where TS : ISaveFileSettings<T>;
 
