@@ -19,7 +19,7 @@ namespace SaveSystem.Core
         /// <summary>
         /// Current manager used for saving the game's state
         /// </summary>
-        public static ISaveManager Manager { get; private set; }
+        public static List<ISaveManager> Managers { get; private set; }
 
         private static readonly List<ISaveListener> SaveListeners;
 
@@ -29,19 +29,24 @@ namespace SaveSystem.Core
         static Save()
         {
             SaveListeners = new List<ISaveListener>();
-            Manager = new NonImplementedSaveManager();
+            Managers = new List<ISaveManager>();
         }
 
         /// <summary>
         /// Set the new way of saving the game.
         /// </summary>
         /// <param name="manager">New manager</param>
-        public static void SetSaveManager(ISaveManager manager)
+        public static void AddSaveManager(ISaveManager manager)
         {
-            Manager = manager;
+            Managers.Add(manager);
             OnSaveManagerChanged?.Invoke(manager);
         }
 
+        public static void RemoveSaveManager(ISaveManager manager)
+        {
+            Managers.Remove(manager);
+            OnSaveManagerChanged?.Invoke(manager);
+        }
         /// <summary>
         /// Adds an objet that will listen for a specific type of file events
         /// </summary>
@@ -109,7 +114,11 @@ namespace SaveSystem.Core
                 }
 
 
-                bool result = Manager.Save(saveFile, settings);
+                bool result = false;
+
+                foreach (var manager in Managers)
+                    result |= manager.Save(saveFile, settings);
+                
                 if (result)
                     OnFileSaved?.Invoke(saveFile);
 
@@ -136,9 +145,16 @@ namespace SaveSystem.Core
         {
             try
             {
-                if (!Manager.Load(out file, settings))
-                    file = settings.GetDefaultSaveFile();
+                
+                bool result = false;
+                file = settings.GetDefaultSaveFile();
 
+                foreach (var manager in Managers)
+                    result |= manager.Load(ref file, settings);
+
+                if (!result)
+                    return false;
+                
                 foreach (ISaveListener saveListener in SaveListeners)
                 {
                     //Every listener concerned reads the file

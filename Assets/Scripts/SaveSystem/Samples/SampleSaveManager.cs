@@ -5,7 +5,7 @@ namespace SaveSystem.Samples
 {
     public class SampleSaveManager : ISaveManager
     {
-        public bool Load<T, TS>(out T save, TS settings)
+        public bool Load<T, TS>(ref T save, TS settings)
             where T : ISaveFile
             where TS : ISaveFileSettings<T>
         {
@@ -20,7 +20,6 @@ namespace SaveSystem.Samples
                 }
             }
 
-            save = default;
             return false;
         }
 
