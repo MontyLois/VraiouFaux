@@ -15,7 +15,6 @@ namespace VraiOuFaux.Game.UI
         public void Sync(Question question)
         {
             localizedStringEvent.StringReference.SetReference(question.GetAffirmation().TableReference,question.GetAffirmation().TableEntryReference);
-            
             localizedStringEvent.RefreshString();
         }
     }

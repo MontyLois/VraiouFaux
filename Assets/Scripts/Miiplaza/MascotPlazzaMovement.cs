@@ -46,7 +46,7 @@ public class MascotPlazzaMovement : MonoBehaviour
     private GameObject IsMouseOverMascot(Vector2 touchPosition)
     {
         
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        Ray ray = Camera.main.ScreenPointToRay(touchPosition);
         RaycastHit hit;
         
         
