@@ -292,8 +292,13 @@ MonoBehaviour:
       m_Sprite: {fileID: 2921437247584120774, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
       m_FromMain: 0
       m_SpriteOverride: {fileID: 2921437247584120774, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+    - m_Name: Jambe-bas D_Souris
+      m_Hash: 149341103
+      m_Sprite: {fileID: 3767143432608832995, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 3767143432608832995, guid: de35cd8c2b17feb46b11e140a0a79407, type: 3}
     m_FromMain: 0
-    m_EntryOverrideCount: 7
+    m_EntryOverrideCount: 8
   - m_Name: bras_haut_G
     m_Hash: 934184762
     m_CategoryList: []
@@ -835,5 +840,5 @@ MonoBehaviour:
     m_FromMain: 0
     m_EntryOverrideCount: 3
   m_PrimaryLibraryGUID: 
-  m_ModificationHash: 638766041368400599
+  m_ModificationHash: 638772211896243213
   m_Version: 1
