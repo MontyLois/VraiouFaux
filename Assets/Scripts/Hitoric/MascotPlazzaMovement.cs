@@ -25,17 +25,20 @@ public class MascotPlazzaMovement : MonoBehaviour
     
     public void MoveMascot(TouchState touch)
     {
-        if (!mascot && touch.phase == TouchPhase.Began)
+        if (IsMouseOverUIWithIgnore(touch.position))
         {
-            canSelect = true;
-        }
-        if(touch.phase == TouchPhase.Ended && canSelect)
-        {
-            GameObject mascot = IsMouseOverMascot(touch.position);
-            if (mascot)
+            if (!mascot && touch.phase == TouchPhase.Began)
             {
-                HistoricManager.Instance.SelectMascot(mascot);
-                canSelect = false;
+                canSelect = true;
+            }
+            if(touch.phase == TouchPhase.Ended && canSelect)
+            {
+                GameObject mascot = IsMouseOverMascot(touch.position);
+                if (mascot)
+                {
+                    HistoricManager.Instance.SelectMascot(mascot);
+                    canSelect = false;
+                }
             }
         }
     }
@@ -71,4 +74,24 @@ public class MascotPlazzaMovement : MonoBehaviour
         //canSelect = true;
     }
 
+    /*
+     * Check if user touch UI and thus should not move the mascot
+     */
+    private bool IsMouseOverUIWithIgnore(Vector2 touchPosition)
+    {
+        PointerEventData pointerEventData = new PointerEventData(EventSystem.current);
+        pointerEventData.position = touchPosition;
+        
+        List<RaycastResult> raycastResultsList = new List<RaycastResult>();
+        EventSystem.current.RaycastAll(pointerEventData, raycastResultsList);
+        for (int i = 0; i < raycastResultsList.Count; i++)
+        {
+            if (raycastResultsList[i].gameObject.CompareTag("NotGamePanel"))
+            {
+                return false;
+            }
+        }
+        return true;
+    }
+    
 }

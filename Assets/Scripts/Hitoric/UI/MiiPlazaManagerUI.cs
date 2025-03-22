@@ -27,7 +27,11 @@ public class MiiPlazaUIManager : MonoBehaviour
     [field: SerializeField] private GameObject animal_Info_UI;
     [field: SerializeField] private LocalizeTextSync animal_Name_Text;
     [field: SerializeField] private LocalizeTextSync animal_Info_Text;
-   
+    
+    
+    //For Finish
+    [field: SerializeField] private GameObject finish_UI;
+    
     [field: SerializeField]
     private Dictionary<GameObject, GameObject> uiToClose;
 
@@ -88,4 +92,9 @@ public class MiiPlazaUIManager : MonoBehaviour
         animal_Info_UI.SetActive(!animal_Info_UI.activeSelf);
     }
     
+    public void ToggleFinish()
+    {
+        finish_UI.SetActive(!mascot_UI.activeSelf);
+    }
+
 }

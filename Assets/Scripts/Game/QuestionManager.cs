@@ -67,6 +67,7 @@ namespace VraiOuFaux.Game
                 spawnTransform = spawn.GetComponent<Transform>();
             }
             SeeNextQuestion();
+            Debug.Log("new game start");
         }
 
 

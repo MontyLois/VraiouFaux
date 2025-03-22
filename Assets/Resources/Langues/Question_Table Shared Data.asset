@@ -219,6 +219,14 @@ MonoBehaviour:
     m_Key: Mascotte_Nom_Lapin
     m_Metadata:
       m_Items: []
+  - m_Id: 12141955241402368
+    m_Key: Menu_Pause_Pause
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12154550920863744
+    m_Key: End_Game
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

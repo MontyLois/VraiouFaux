@@ -100,8 +100,7 @@ public class HistoricManager : MonoSingleton<HistoricManager>
     {
         selectedMascot.GetComponent<Transform>().SetParent(spawnTransform);
         selectedMascot.GetComponent<Mascot>().ResetPosition();
-        //selectedMascot.GetComponent<SortingGroup>().sortingLayerID =
-         //   SortingLayer.GetLayerValueFromName("Default");
+        selectedMascot.GetComponent<Mascot>().Drop();
         selectedMascot = null;
         OnMascotUnselected?.Invoke();
     }

@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace VraiOuFaux.Core
 {
@@ -26,6 +27,16 @@ namespace VraiOuFaux.Core
         public void OpenSettings()
         {
             menu_setting_UI.SetActive(true);
+        }
+        
+        public void LoadGame()
+        {
+            SceneManager.LoadScene("QuestionsTests");
+        }
+        
+        public void LoadHome()
+        {
+            SceneManager.LoadScene("Home");
         }
     }
 }

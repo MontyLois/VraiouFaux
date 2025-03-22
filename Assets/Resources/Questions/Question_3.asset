@@ -16,7 +16,7 @@ MonoBehaviour:
   <Affirmation_text_Key>k__BackingField: Question_3_Affirmation
   <Solution_text_Key>k__BackingField: Question_Solution_True
   <Explanation_text_Key>k__BackingField: Question_3_Explanation
-  <SolutionB>k__BackingField: 0
+  <SolutionB>k__BackingField: 1
   <PlayerAnswer>k__BackingField: 1
   <Question_Key_Text>k__BackingField:
     m_TableReference:
@@ -31,7 +31,7 @@ MonoBehaviour:
     m_TableReference:
       m_TableCollectionName: GUID:b8a139a0cbba0f54ba8b45426452be1c
     m_TableEntryReference:
-      m_KeyId: 250069311488
+      m_KeyId: 246638370816
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0

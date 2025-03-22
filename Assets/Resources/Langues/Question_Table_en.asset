@@ -287,6 +287,14 @@ MonoBehaviour:
     m_Localized: Rabbit
     m_Metadata:
       m_Items: []
+  - m_Id: 12141955241402368
+    m_Localized: Pause
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12154550920863744
+    m_Localized: Finish
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

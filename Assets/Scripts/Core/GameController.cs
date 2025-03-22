@@ -14,8 +14,6 @@ namespace VraiOuFaux.Core
             //generate the database
             GameDatabase = new GameDatabase();
             GameMetrics = Resources.Load<GameMetrics>("GameMetrics");
-            
-            Screen.orientation = ScreenOrientation.LandscapeLeft;
         }
     }
 }
