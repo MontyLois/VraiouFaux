@@ -81,6 +81,7 @@ public class HistoricManager : MonoSingleton<HistoricManager>
              if (answersDictionary.ContainsKey(selectedMascot))
              {
                  OnMascotSelected?.Invoke(answersDictionary[selectedMascot].Item1);
+                 selectedMascot.GetComponent<Mascot>().Talk();
              }
              else
              {

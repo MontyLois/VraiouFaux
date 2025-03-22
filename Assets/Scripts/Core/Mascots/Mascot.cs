@@ -36,6 +36,8 @@ namespace VraiOuFaux.Game
             isSwiped = false;
             
             transform.rotation = Quaternion.Euler(Camera.main.transform.rotation.eulerAngles.x,0f,0f);
+            
+            Talk();
         }
 
         private void FixedUpdate()
@@ -54,6 +56,8 @@ namespace VraiOuFaux.Game
                 float z = this.mascotHeadPosition.position.z - Camera.main.transform.position.z;
                 Vector3 newpos = Camera.main.ScreenToWorldPoint(new Vector3(position.x, position.y,z ));
                 mascotHeadPosition.position = new Vector3(newpos.x, newpos.y, mascotHeadPosition.position.z);
+                
+                Wiggle();
             }
         }
         
@@ -65,6 +69,7 @@ namespace VraiOuFaux.Game
         public void ResetPosition()
         {
             mascotHeadPosition.position = initialPosition;
+            Drop();
         }
         
 
@@ -104,12 +109,20 @@ namespace VraiOuFaux.Game
 
         public void Talk()
         {
-            _animator.Play("Mascot_AskQuestion");
+            //_animator.Play("Mascot_AskQuestion");
+            _animator.SetTrigger("talking");
         }
        
         public void Wiggle()
         {
-            _animator.Play("Mascot_Wiggle");
+            //_animator.SetTrigger("wiggle");
+            _animator.SetBool("IsDragged", true);
+        }
+        
+        public void Drop()
+        {
+            _animator.SetBool("IsDragged", false);
+            _animator.SetTrigger("drop");
         }
     }
 }
