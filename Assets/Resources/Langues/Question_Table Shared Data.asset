@@ -211,6 +211,14 @@ MonoBehaviour:
     m_Key: Language_label
     m_Metadata:
       m_Items: []
+  - m_Id: 12040698891788288
+    m_Key: Mascotte_FunFact_Lapin
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12040908602793984
+    m_Key: Mascotte_Nom_Lapin
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
