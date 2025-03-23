@@ -32,5 +32,10 @@ namespace VraiOuFaux.Core
             Debug.Log("Cleaning up singleton...");
             Destroy(this); // Destroy the GameObject when quitting
         }
+
+        public void ResetAnswers()
+        {
+            playerAnswers = new List<(Question, bool)>();
+        }
     }
 }

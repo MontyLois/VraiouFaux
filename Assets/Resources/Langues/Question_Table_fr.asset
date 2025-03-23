@@ -298,6 +298,34 @@ MonoBehaviour:
     m_Localized: Langue
     m_Metadata:
       m_Items: []
+  - m_Id: 12040698891788288
+    m_Localized: "Les lapins ont aid\xE9 la recherche sur le cancer en contribuant
+      au d\xE9veloppement d'anticorps et de traitements \xE0 base de virus, comme
+      le virus myxome, qui cible les cellules canc\xE9reuses. Leur r\xF4le dans l'\xE9tude
+      des virus humains, tels que le HPV, a \xE9galement permis des avanc\xE9es dans
+      le d\xE9veloppement de vaccins contre le cancer."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12040908602793984
+    m_Localized: Le lapin
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12141955241402368
+    m_Localized: Pause
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12154550920863744
+    m_Localized: Finir
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12191292214403072
+    m_Localized: "Bonne R\xE9ponses"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12191411601072128
+    m_Localized: "Mauvaises R\xE9ponses"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

@@ -67,12 +67,12 @@ namespace VraiOuFaux.Game
                 spawnTransform = spawn.GetComponent<Transform>();
             }
             SeeNextQuestion();
+            Debug.Log("new game start");
         }
 
 
         public void SeeNextQuestion()
         {
-            Debug.Log("question restante : "+ questions.Count);
             //check if there's still question left
             if (questions.TryPeek(out Question next))
             {
@@ -128,9 +128,8 @@ namespace VraiOuFaux.Game
                 bool result = currentQuestion.Answer(choice);
                 Debug.Log(result ? "Success" : "Failure");
                 OnQuestionAnswered?.Invoke(currentQuestion, result);
+                StartCoroutine(IAnswerQuestion(result));
             }
-            StartCoroutine(IAnswerQuestion(choice));
-            
         }
         
         private IEnumerator IAnswerQuestion(bool choice)

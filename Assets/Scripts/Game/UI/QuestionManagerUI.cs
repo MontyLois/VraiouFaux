@@ -9,6 +9,12 @@ namespace VraiOuFaux.Game.UI
         [SerializeField]
         private GameObject dialogue_box;
         
+        
+        [SerializeField]
+        private GameObject rightUI;
+        [SerializeField]
+        private GameObject wrongUI;
+        
         /*
          * subscribe to questionManagers events
          */
@@ -42,12 +48,23 @@ namespace VraiOuFaux.Game.UI
         {
             dialogue_box.SetActive(true);
             questionTextUI.Sync(question);
+            rightUI.SetActive(false);
+            wrongUI.SetActive(false);
         }
 
         private void OnQuestionAnswered(Question question, bool result)
         {
             dialogue_box.SetActive(false);
+            if (result)
+            {
+                rightUI.SetActive(true);
+            }
+            else
+            {
+                wrongUI.SetActive(true);
+            }
         }
+  
 
     }
 }
