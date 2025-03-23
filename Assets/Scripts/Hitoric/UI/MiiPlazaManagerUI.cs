@@ -28,9 +28,14 @@ public class MiiPlazaUIManager : MonoBehaviour
     [field: SerializeField] private LocalizeTextSync animal_Name_Text;
     [field: SerializeField] private LocalizeTextSync animal_Info_Text;
     
-    
     //For Finish
     [field: SerializeField] private GameObject finish_UI;
+    
+    //For wrong or right
+    [field: SerializeField] private GameObject wrongAnswers;
+    [field: SerializeField] private GameObject wrongAnswersUI;
+    [field: SerializeField] private GameObject rightAnswers;
+    [field: SerializeField] private GameObject rightAnswersUI;
     
     [field: SerializeField]
     private Dictionary<GameObject, GameObject> uiToClose;
@@ -97,4 +102,19 @@ public class MiiPlazaUIManager : MonoBehaviour
         finish_UI.SetActive(!mascot_UI.activeSelf);
     }
 
+    public void SelectRighAnswers()
+    {
+        wrongAnswers.SetActive(false);
+        wrongAnswersUI.SetActive(false);
+        rightAnswers.SetActive(true);
+        rightAnswersUI.SetActive(true);
+    }
+    
+    public void SelectWrongAnswers()
+    {
+        rightAnswers.SetActive(false);
+        rightAnswersUI.SetActive(false);
+        wrongAnswers.SetActive(true);
+        wrongAnswersUI.SetActive(true);
+    }
 }

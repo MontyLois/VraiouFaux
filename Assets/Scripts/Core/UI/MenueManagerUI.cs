@@ -31,11 +31,13 @@ namespace VraiOuFaux.Core
         
         public void LoadGame()
         {
+            GameManager.Instance.ResetAnswers();
             SceneManager.LoadScene("QuestionsTests");
         }
         
         public void LoadHome()
         {
+            GameManager.Instance.ResetAnswers();
             SceneManager.LoadScene("Home");
         }
     }

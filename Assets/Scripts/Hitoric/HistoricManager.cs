@@ -15,10 +15,15 @@ public class HistoricManager : MonoSingleton<HistoricManager>
     private Transform selectionTransform;
     [field: SerializeField]
     private Transform spawnTransform;
+    
+    [field: SerializeField]
+    private Transform spawnRightAnswers;
+    [field: SerializeField]
+    private Transform spawnWrongAnswers;
 
     
     private float xoffset = 2.5f;
-    private float zoffset = -1f;
+    private float zoffset = 1f;
     private int xmax = 2;
     
     private Dictionary<GameObject, (Question,bool)> answersDictionary;
@@ -35,7 +40,6 @@ public class HistoricManager : MonoSingleton<HistoricManager>
         Debug.Log(GameManager.Instance.playerAnswers);
         answersDictionary = new Dictionary<GameObject, (Question, bool)>();
         SpawnMascot();
-
     }
 
     private void SpawnMascot()
@@ -46,25 +50,61 @@ public class HistoricManager : MonoSingleton<HistoricManager>
         
         foreach (var answer in playerAnswers)
         {
-            GameObject mascot_body = Instantiate(answer.Item1.MascotData.Avatar,position, spawnTransform.rotation,spawnTransform);
-            answersDictionary.Add(mascot_body, answer);
-            
-            //handle position offset for spawning mascot 
-            if (x == xmax)
+            Debug.Log("for : " + answer.Item1.GetAffirmation().GetLocalizedString() + "the playser answer is " + answer.Item2);
+            if (answer.Item2)
             {
-                z++;
-                position.x = spawnTransform.position.x;
-                position.z += zoffset;
-                x = 0;
-                if (z % 2 != 0)
+                GameObject mascot_body = Instantiate(answer.Item1.MascotData.Avatar,position, spawnTransform.rotation,spawnRightAnswers);
+                answersDictionary.Add(mascot_body, answer);
+            
+                //handle position offset for spawning mascot 
+                if (x == xmax)
                 {
-                    position.x += 1.25f;
+                    z++;
+                    position.x = spawnTransform.position.x;
+                    position.z += zoffset;
+                    x = 0;
+                    if (z % 2 != 0)
+                    {
+                        position.x += 1.25f;
+                    }
+                }
+                else
+                {
+                    x++;
+                    position.x += xoffset ;
                 }
             }
-            else
+        }
+        
+        
+        position = new Vector3(spawnTransform.position.x,spawnTransform.position.y, spawnTransform.position.z );
+        x = 0;
+        z = 0;
+        
+        foreach (var answer in playerAnswers)
+        {
+            if (!answer.Item2)
             {
-                x++;
-                position.x += xoffset ;
+                GameObject mascot_body = Instantiate(answer.Item1.MascotData.Avatar,position, spawnTransform.rotation,spawnWrongAnswers);
+                answersDictionary.Add(mascot_body, answer);
+            
+                //handle position offset for spawning mascot 
+                if (x == xmax)
+                {
+                    z++;
+                    position.x = spawnTransform.position.x;
+                    position.z += zoffset;
+                    x = 0;
+                    if (z % 2 != 0)
+                    {
+                        position.x += 1.25f;
+                    }
+                }
+                else
+                {
+                    x++;
+                    position.x += xoffset ;
+                }
             }
         }
     }
@@ -98,7 +138,15 @@ public class HistoricManager : MonoSingleton<HistoricManager>
 
     public void ResetCurrentMascot()
     {
-        selectedMascot.GetComponent<Transform>().SetParent(spawnTransform);
+        if (answersDictionary[selectedMascot].Item2)
+        {
+            selectedMascot.GetComponent<Transform>().SetParent(spawnRightAnswers);
+        }
+        else
+        {
+            selectedMascot.GetComponent<Transform>().SetParent(spawnWrongAnswers);
+        }
+        
         selectedMascot.GetComponent<Mascot>().ResetPosition();
         selectedMascot.GetComponent<Mascot>().Drop();
         selectedMascot = null;
@@ -111,5 +159,13 @@ public class HistoricManager : MonoSingleton<HistoricManager>
         {
             OnInfoAnimalOpen?.Invoke(answersDictionary[selectedMascot].Item1);
         }
+    }
+
+    public void ResetSingleton()
+    {
+        playerAnswers = new List<(Question, bool)>();
+        playerAnswers = GameManager.Instance.playerAnswers;
+        answersDictionary = new Dictionary<GameObject, (Question, bool)>();
+        SpawnMascot();
     }
 }

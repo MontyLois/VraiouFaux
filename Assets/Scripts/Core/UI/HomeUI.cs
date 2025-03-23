@@ -8,11 +8,13 @@ namespace VraiOuFaux.Core
 
         public void LoadMainGame()
         {
+            GameManager.Instance.ResetAnswers();
             SceneManager.LoadScene("QuestionsTests");
         }
         
         public void LoadHomeScreen()
         {
+            GameManager.Instance.ResetAnswers();
             SceneManager.LoadScene("Home");
         }
     }

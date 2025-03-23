@@ -318,6 +318,14 @@ MonoBehaviour:
     m_Localized: Finir
     m_Metadata:
       m_Items: []
+  - m_Id: 12191292214403072
+    m_Localized: "Bonne R\xE9ponses"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12191411601072128
+    m_Localized: "Mauvaises R\xE9ponses"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
